@@ -1,31 +1,39 @@
 package com.example.pawprints.ui.report
 
-import androidx.fragment.app.viewModels
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.pawprints.R
+import android.widget.TextView
+import androidx.lifecycle.ViewModelProvider
+import com.example.pawprints.databinding.FragmentReportBinding
 
 class ReportFragment : Fragment() {
 
-    companion object {
-        fun newInstance() = ReportFragment()
-    }
-
-    private val viewModel: ReportViewModel by viewModels()
-
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-        // TODO: Use the ViewModel
-    }
+    private var _binding: FragmentReportBinding? = null
+    private val binding get() = _binding!!
 
     override fun onCreateView(
-        inflater: LayoutInflater, container: ViewGroup?,
+        inflater: LayoutInflater,
+        container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return inflater.inflate(R.layout.fragment_report, container, false)
+        val reportViewModel =
+            ViewModelProvider(this).get(ReportViewModel::class.java)
+
+        _binding = FragmentReportBinding.inflate(inflater, container, false)
+        val root: View = binding.root
+
+//        val textView: TextView = binding.textNotifications
+//        reportViewModel.text.observe(viewLifeCicleOwner){
+//            textView.text = it
+//        }
+        return root
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 }
