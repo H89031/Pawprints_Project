@@ -11,14 +11,12 @@
         android:id="@+id/nav_background"
         android:layout_width="0dp"
         android:layout_height="75dp"
-        android:background="@drawable/nav_shape"
+        android:background="@drawable/f_nav_shape"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-
-        
 
         />
 
@@ -27,19 +25,19 @@
         android:layout_width="0dp"
         android:layout_height="75dp"
         android:background="@drawable/transparent_background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        app:itemIconSize="50dp"
+        app:itemIconTint="@drawable/f_nav_icon_selected"
+        app:itemTextColor="@drawable/f_nav_icon_selected"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:menu="@menu/bottom_nav_menu"
-        app:itemIconSize="50dp"
-        app:itemIconTint="@drawable/nav_icon_selected"
-        app:itemTextColor="@drawable/nav_icon_selected"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp" />
+        app:menu="@menu/bottom_nav_menu" />
 
 
-    <fragment
+    <androidx.fragment.app.FragmentContainerView
         android:id="@+id/nav_host_fragment_activity_navigation"
         android:name="androidx.navigation.fragment.NavHostFragment"
         android:layout_width="match_parent"
@@ -50,7 +48,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:navGraph="@navigation/mobile_navigation" />
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

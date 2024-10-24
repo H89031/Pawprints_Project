@@ -19,7 +19,6 @@ class Login : AppCompatActivity() {
             insets
         }
     }
-
     fun signupclick(view: View) {
         val intent = Intent(this@Login, Signup::class.java)
         startActivity(intent)
