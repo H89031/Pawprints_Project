@@ -105,17 +105,21 @@
 
     <TextView
         android:id="@+id/signupbutton"
-        android:layout_width="200dp"
+        android:layout_width="60dp"
         android:layout_height="48dp"
-        android:layout_marginBottom="75dp"
+        android:layout_marginBottom="72dp"
         android:clickable="true"
+        android:onClick="signupclick"
         android:fontFamily="sans-serif-medium"
         android:gravity="right|center_vertical"
         android:text="Sign Up."
         android:textColor="@color/blue"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintEnd_toEndOf="@+id/text_account"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/text_account"
+        app:layout_constraintTop_toTopOf="@+id/text_account"
+        app:layout_constraintVertical_bias="0.0">
 
     </TextView>
 
