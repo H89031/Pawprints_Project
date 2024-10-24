@@ -67,6 +67,7 @@
             android:layout_marginTop="15dp"
             android:background="@drawable/f_rounded_purple"
             android:hint="Log In"
+            android:onClick="LoggingIn"
             android:textColorHint="@color/white"
             android:textSize="15sp">
 
