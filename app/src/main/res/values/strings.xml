@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pawprints</string>
+    <string name="logo">logo</string>
+    <string name="title_activity_navigation">Navigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_map">Map</string>
+    <string name="title_search">Search</string>string>
+    <string name="title_report">Report</string>
+    <string name="title_profile">Profile</string>
+</resources>
