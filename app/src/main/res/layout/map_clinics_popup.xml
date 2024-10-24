@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <com.google.android.material.bottomsheet.BottomSheetDragHandleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Animal Clinic"
+        android:layout_marginBottom="10dp"
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:textColor="@color/text_black"
+        android:fontFamily="sans-serif-black"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pangalan ng clinic*"
+                android:textColor="@color/text_black"
+                android:fontFamily="sans-serif-black"
+                android:layout_marginBottom="10dp">
+
+            </TextView>
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Address*"
+                android:textColor="@color/text_black"
+                android:fontFamily="sans-serif-medium">
+            </TextView>
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="Contact : 0999 123 4568"
+                android:textColor="@color/text_black"
+                android:fontFamily="sans-serif-medium">
+            </TextView>
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="✔   Check-up"
+                android:textColor="@color/dark_blue"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium">
+            </TextView>
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔   Grooming"
+                android:textColor="@color/dark_blue"
+                android:textSize="12sp"
+                android:fontFamily="sans-serif-medium">
+            </TextView>
+
+            <TextView
+                android:layout_marginLeft="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="✔   Castration &amp; Spaying"
+                android:textColor="@color/dark_blue"
+                android:fontFamily="sans-serif-medium"
+                android:textSize="12sp"
+                android:layout_marginBottom="100dp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp">
+
+            <ImageView
+                android:layout_marginLeft="10dp"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+
+                android:scaleType="centerCrop">
+            </ImageView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
