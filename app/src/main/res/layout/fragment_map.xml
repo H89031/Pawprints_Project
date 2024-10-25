@@ -26,7 +26,7 @@
             android:adjustViewBounds="true"
             android:contentDescription="map"
             android:scaleType="centerCrop"
-            tools:src="@drawable/bg_map">
+            android:src="@drawable/bg_map">
 
         </ImageView>
 
@@ -47,7 +47,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_pin_stray">
+        android:src="@drawable/ic_pin_stray">
 
     </ImageButton>
 
@@ -66,7 +66,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_pin_stray">
+        android:src="@drawable/ic_pin_stray">
 
     </ImageButton>
 
@@ -85,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_pin_center">
+        android:src="@drawable/ic_pin_center">
 
     </ImageButton>
 
@@ -104,7 +104,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_pin_center">
+        android:src="@drawable/ic_pin_center">
 
     </ImageButton>
 
@@ -123,7 +123,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_pin_clinic">
+        android:src="@drawable/ic_pin_clinic">
 
     </ImageButton>
 
@@ -142,7 +142,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_pin_clinic">
+        android:src="@drawable/ic_pin_clinic">
 
     </ImageButton>
 
@@ -161,7 +161,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_pin_missing">
+        android:src="@drawable/ic_pin_missing">
 
     </ImageButton>
 
@@ -180,7 +180,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:src="@drawable/ic_pin_missing">
+        android:src="@drawable/ic_pin_missing">
 
     </ImageButton>
 

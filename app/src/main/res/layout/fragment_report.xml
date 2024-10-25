@@ -68,7 +68,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:adjustViewBounds="true"
-                    tools:src="@drawable/img_report_page">
+                    android:src="@drawable/img_report_page">
 
                 </ImageView>
 
@@ -180,7 +180,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
@@ -193,7 +193,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
@@ -206,7 +206,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
@@ -219,7 +219,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
@@ -233,7 +233,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
@@ -304,7 +304,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
@@ -317,7 +317,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
@@ -330,7 +330,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
@@ -343,7 +343,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
@@ -357,7 +357,7 @@
                             android:adjustViewBounds="true"
                             android:background="@drawable/f_rounded_corner"
                             android:scaleType="centerCrop"
-                            tools:src="@tools:sample/avatars"
+                            android:src="@drawable/img_example_lang"
                             android:contentDescription="dog"
                             android:clickable="true"/>
 
