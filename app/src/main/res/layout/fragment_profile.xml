@@ -72,7 +72,7 @@
                     android:layout_height="100dp"
                     android:contentDescription="profilepic"
                     app:shapeAppearanceOverlay="@style/CircledImageView"
-                    tools:src="@tools:sample/avatars"
+                    android:src="@drawable/img_example_lang"
                     android:clickable="true"
                     android:focusable="true"
                     android:scaleType="centerCrop"
