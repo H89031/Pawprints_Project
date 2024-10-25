@@ -2,34 +2,34 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/map"
+        android:id="@+id/navigation_map"
         android:icon="@drawable/ic_nav_map"
-        android:title=""
+        android:title="map"
 
         />
 
     <item
-        android:id="@+id/search"
+        android:id="@+id/navigation_search"
         android:icon="@drawable/ic_nav_search"
-        android:title=""
+        android:title="search"
         />
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/navigation_home"
         android:icon="@drawable/ic_nav_home"
-        android:title=""
+        android:title="home"
         />
 
     <item
-        android:id="@+id/report"
+        android:id="@+id/navigation_report"
         android:icon="@drawable/ic_nav_report"
-        android:title=""
+        android:title="report"
         />
 
     <item
-        android:id="@+id/profile"
+        android:id="@+id/navigation_profile"
         android:icon="@drawable/ic_nav_profile"
-        android:title=""
+        android:title="profile"
         />
 
 </menu>
