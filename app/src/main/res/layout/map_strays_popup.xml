@@ -74,7 +74,6 @@
                 android:layout_marginLeft="10dp"
                 android:layout_width="130dp"
                 android:layout_height="130dp"
-
                 android:scaleType="centerCrop">
             </ImageView>
 
