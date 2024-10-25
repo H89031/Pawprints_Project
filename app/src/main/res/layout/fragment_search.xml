@@ -45,7 +45,7 @@
 
     <LinearLayout
         android:id="@+id/dogs"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="180dp"
         android:layout_marginTop="10dp"
         android:background="@color/white"
@@ -94,10 +94,6 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
                 <ImageButton
                     android:layout_width="85dp"
                     android:layout_height="fill_parent"
@@ -156,6 +152,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/f_rounded_corner"
                     android:scaleType="centerCrop"
@@ -171,7 +168,7 @@
 
     <LinearLayout
         android:id="@+id/clinic"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:background="@color/white"
@@ -218,10 +215,6 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
                 <ImageButton
                     android:layout_width="110dp"
                     android:layout_height="fill_parent"
@@ -267,6 +260,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/f_rounded_corner"
                     android:scaleType="centerCrop"
@@ -282,7 +276,7 @@
 
     <LinearLayout
         android:id="@+id/adoption"
-        android:layout_width="409dp"
+        android:layout_width="match_parent"
         android:layout_height="170dp"
         android:layout_marginTop="20dp"
         android:background="@color/white"
@@ -330,10 +324,6 @@
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent" />
-
                 <ImageButton
                     android:layout_width="110dp"
                     android:layout_height="fill_parent"
@@ -379,6 +369,7 @@
                     android:layout_marginLeft="8dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"
                     android:adjustViewBounds="true"
                     android:background="@drawable/f_rounded_corner"
                     android:scaleType="centerCrop"
