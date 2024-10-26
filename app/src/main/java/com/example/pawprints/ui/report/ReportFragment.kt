@@ -21,12 +21,48 @@ class ReportFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         val seemoreM: TextView = view.findViewById(R.id.seeMoreMissing)
         seemoreM.setOnClickListener {
-            view.findNavController().navigate(R.id.action_navigation_report_to_reportMissingFragment)
+            view.findNavController().navigate(R.id.action_navigation_report_to_RMissingDogFragment)
         }
         val seemoreS: TextView = view.findViewById(R.id.seeMoreStray)
         seemoreS.setOnClickListener {
+            view.findNavController().navigate(R.id.action_navigation_report_to_RStrayDogFragment)
+        }
+        val repMDog: TextView = view.findViewById(R.id.reportMDog)
+        repMDog.setOnClickListener {
+            view.findNavController().navigate(R.id.action_navigation_report_to_reportMissingFragment)
+        }
+        val repSDog: TextView = view.findViewById(R.id.reportSDog)
+        repSDog.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_report_to_reportStrayFragment)
         }
+
+        ///////////////
+        val mdoge1: ImageButton = view.findViewById(R.id.mDog1)
+        mdoge1.setOnClickListener {
+            view.findNavController().navigate(R.id.action_navigation_report_to_reportMissingDog1Fragment)
+        }
+        val mdoge2: ImageButton = view.findViewById(R.id.mDog2)
+        mdoge2.setOnClickListener {
+            view.findNavController().navigate(R.id.action_navigation_report_to_reportMissingDog2Fragment)
+        }
+        val mdoge3: ImageButton = view.findViewById(R.id.mDog3)
+        mdoge3.setOnClickListener {
+            view.findNavController().navigate(R.id.action_navigation_report_to_reportMissingDog3Fragment)
+        }
+        ///////////////
+        val sdoge1: ImageButton = view.findViewById(R.id.sDog1)
+        sdoge1.setOnClickListener {
+            view.findNavController().navigate(R.id.action_navigation_report_to_reportStrayDog1Fragment)
+        }
+        val sdoge2: ImageButton = view.findViewById(R.id.sDog2)
+        sdoge2.setOnClickListener {
+            view.findNavController().navigate(R.id.action_navigation_report_to_reportStrayDog2Fragment)
+        }
+        val sdoge3: ImageButton = view.findViewById(R.id.sDog3)
+        sdoge3.setOnClickListener {
+            view.findNavController().navigate(R.id.action_navigation_report_to_reportStrayDog3Fragment)
+        }
+
 
     }
     override fun onCreateView(

@@ -97,6 +97,7 @@
                         android:layout_margin="5dp">
                         <Button
                             android:text=" REPORT MISSING DOG"
+                            android:id="@+id/reportMDog"
                             android:textColor="@color/white"
                             android:fontFamily="sans-serif-black"
                             android:background="@color/dark_purple"
@@ -114,6 +115,7 @@
                         android:layout_margin="5dp">
                         <Button
                             android:text=" REPORT STRAY DOG"
+                            android:id="@+id/reportSDog"
                             android:textColor="@color/white"
                             android:fontFamily="sans-serif-black"
                             android:background="@color/dark_purple"
@@ -178,6 +180,7 @@
                             android:orientation="horizontal">
 
                             <ImageButton
+                                android:id="@+id/mDog1"
                                 android:layout_width="95dp"
                                 android:layout_height="fill_parent"
                                 android:layout_marginStart="15dp"
@@ -191,6 +194,7 @@
                                 android:clickable="true"/>
 
                             <ImageButton
+                                android:id="@+id/mDog2"
                                 android:layout_width="95dp"
                                 android:layout_height="fill_parent"
                                 android:layout_marginStart="8dp"
@@ -198,12 +202,13 @@
                                 android:layout_marginBottom="15dp"
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
-                                android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:clickable="true"
                                 android:contentDescription="dog"
-                                android:clickable="true"/>
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang" />
 
                             <ImageButton
+                                android:id="@+id/mDog3"
                                 android:layout_width="95dp"
                                 android:layout_height="fill_parent"
                                 android:layout_marginStart="8dp"
@@ -302,6 +307,7 @@
                             android:orientation="horizontal">
 
                             <ImageButton
+                                android:id="@+id/sDog1"
                                 android:layout_width="95dp"
                                 android:layout_height="fill_parent"
                                 android:layout_marginStart="15dp"
@@ -315,6 +321,7 @@
                                 android:clickable="true"/>
 
                             <ImageButton
+                                android:id="@+id/sDog2"
                                 android:layout_width="95dp"
                                 android:layout_height="fill_parent"
                                 android:layout_marginStart="8dp"
@@ -328,6 +335,7 @@
                                 android:clickable="true"/>
 
                             <ImageButton
+                                android:id="@+id/sDog3"
                                 android:layout_width="95dp"
                                 android:layout_height="fill_parent"
                                 android:layout_marginStart="8dp"

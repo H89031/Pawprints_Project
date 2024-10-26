@@ -70,6 +70,7 @@
                 android:textColor="@color/text_black" />
 
             <TextView
+                android:id="@+id/moreAdopt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -95,6 +96,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
+                    android:id="@+id/adoptDog1"
                     android:layout_width="95dp"
                     android:layout_height="fill_parent"
                     android:layout_marginStart="15dp"
@@ -108,6 +110,7 @@
                     android:clickable="true"/>
 
                 <ImageButton
+                    android:id="@+id/adoptDog2"
                     android:layout_width="95dp"
                     android:layout_height="fill_parent"
                     android:layout_marginStart="8dp"
@@ -121,6 +124,7 @@
                     android:clickable="true"/>
 
                 <ImageButton
+                    android:id="@+id/adoptDog3"
                     android:layout_width="95dp"
                     android:layout_height="fill_parent"
                     android:layout_marginStart="8dp"
@@ -192,6 +196,7 @@
                 android:textColor="@color/text_black" />
 
             <TextView
+                android:id="@+id/moreClinic"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -216,6 +221,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
+                    android:id="@+id/clinics1"
                     android:layout_width="140dp"
                     android:layout_height="fill_parent"
                     android:layout_marginStart="15dp"
@@ -229,6 +235,7 @@
                     android:clickable="true"/>
 
                 <ImageButton
+                    android:id="@+id/clinics2"
                     android:layout_width="140dp"
                     android:layout_height="fill_parent"
                     android:layout_marginStart="8dp"
@@ -301,6 +308,7 @@
                 android:textColor="@color/text_black" />
 
             <TextView
+                android:id="@+id/moreCenter"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:clickable="true"
@@ -325,6 +333,7 @@
                 android:orientation="horizontal">
 
                 <ImageButton
+                    android:id="@+id/centers1"
                     android:layout_width="140dp"
                     android:layout_height="fill_parent"
                     android:layout_marginStart="15dp"
@@ -338,6 +347,7 @@
                     android:clickable="true"/>
 
                 <ImageButton
+                    android:id="@+id/centers2"
                     android:layout_width="140dp"
                     android:layout_height="fill_parent"
                     android:layout_marginStart="8dp"

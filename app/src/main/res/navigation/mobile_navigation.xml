@@ -15,7 +15,38 @@
         android:id="@+id/navigation_search"
         android:name="com.example.pawprints.ui.search.SearchFragment"
         android:label="@string/title_search"
-        tools:layout="@layout/fragment_search" />
+        tools:layout="@layout/fragment_search" >
+        <action
+            android:id="@+id/action_navigation_search_to_searchAdoptionDogsFragment"
+            app:destination="@id/searchAdoptionDogsFragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_searchAdoptionCenterFragment"
+            app:destination="@id/searchAdoptionCenterFragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_searchClinicsFragment"
+            app:destination="@id/searchClinicsFragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_searchDog1Fragment"
+            app:destination="@id/searchDog1Fragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_searchDog2Fragment"
+            app:destination="@id/searchDog2Fragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_searchDog3Fragment"
+            app:destination="@id/searchDog3Fragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_searchClinic1Fragment"
+            app:destination="@id/searchClinic1Fragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_searchClinic2Fragment"
+            app:destination="@id/searchClinic2Fragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_searchCenter1Fragment"
+            app:destination="@id/searchCenter1Fragment" />
+        <action
+            android:id="@+id/action_navigation_search_to_searchCenter2Fragment"
+            app:destination="@id/searchCenter2Fragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_home"
@@ -94,12 +125,32 @@
         android:id="@+id/RMissingDogFragment"
         android:name="com.example.pawprints.ui.report.RMissingDogFragment"
         android:label="fragment_r_missing_dog"
-        tools:layout="@layout/fragment_r_missing_dog" />
+        tools:layout="@layout/fragment_r_missing_dog" >
+        <action
+            android:id="@+id/action_RMissingDogFragment_to_reportMissingDog1Fragment"
+            app:destination="@id/reportMissingDog1Fragment" />
+        <action
+            android:id="@+id/action_RMissingDogFragment_to_reportMissingDog2Fragment"
+            app:destination="@id/reportMissingDog2Fragment" />
+        <action
+            android:id="@+id/action_RMissingDogFragment_to_reportMissingDog3Fragment"
+            app:destination="@id/reportMissingDog3Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/RStrayDogFragment"
         android:name="com.example.pawprints.ui.report.RStrayDogFragment"
         android:label="fragment_r_stray_dog"
-        tools:layout="@layout/fragment_r_stray_dog" />
+        tools:layout="@layout/fragment_r_stray_dog" >
+        <action
+            android:id="@+id/action_RStrayDogFragment_to_reportStrayDog1Fragment"
+            app:destination="@id/reportStrayDog1Fragment" />
+        <action
+            android:id="@+id/action_RStrayDogFragment_to_reportStrayDog2Fragment"
+            app:destination="@id/reportStrayDog2Fragment" />
+        <action
+            android:id="@+id/action_RStrayDogFragment_to_reportStrayDog3Fragment"
+            app:destination="@id/reportStrayDog3Fragment" />
+    </fragment>
     <fragment
         android:id="@+id/reportMissingFragment"
         android:name="com.example.pawprints.ui.report.ReportMissingFragment"
@@ -140,6 +191,80 @@
         android:name="com.example.pawprints.ui.report.ReportStrayDog3Fragment"
         android:label="fragment_report_stray_dog3"
         tools:layout="@layout/fragment_report_stray_dog3" />
+    <fragment
+        android:id="@+id/searchAdoptionCenterFragment"
+        android:name="com.example.pawprints.ui.search.SearchAdoptionCenterFragment"
+        android:label="fragment_search_adoption_center"
+        tools:layout="@layout/fragment_search_adoption_center" >
+        <action
+            android:id="@+id/action_searchAdoptionCenterFragment_to_searchCenter1Fragment"
+            app:destination="@id/searchCenter1Fragment" />
+        <action
+            android:id="@+id/action_searchAdoptionCenterFragment_to_searchCenter2Fragment"
+            app:destination="@id/searchCenter2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchAdoptionDogsFragment"
+        android:name="com.example.pawprints.ui.search.SearchAdoptionDogsFragment"
+        android:label="fragment_search_adoption_dogs"
+        tools:layout="@layout/fragment_search_adoption_dogs" >
+        <action
+            android:id="@+id/action_searchAdoptionDogsFragment_to_searchDog1Fragment"
+            app:destination="@id/searchDog1Fragment" />
+        <action
+            android:id="@+id/action_searchAdoptionDogsFragment_to_searchDog2Fragment"
+            app:destination="@id/searchDog2Fragment" />
+        <action
+            android:id="@+id/action_searchAdoptionDogsFragment_to_searchDog3Fragment"
+            app:destination="@id/searchDog3Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchClinicsFragment"
+        android:name="com.example.pawprints.ui.search.SearchClinicsFragment"
+        android:label="fragment_search_clinics"
+        tools:layout="@layout/fragment_search_clinics" >
+        <action
+            android:id="@+id/action_searchClinicsFragment_to_searchClinic1Fragment"
+            app:destination="@id/searchClinic1Fragment" />
+        <action
+            android:id="@+id/action_searchClinicsFragment_to_searchClinic2Fragment"
+            app:destination="@id/searchClinic2Fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchDog1Fragment"
+        android:name="com.example.pawprints.ui.search.SearchDog1Fragment"
+        android:label="fragment_search_dog1"
+        tools:layout="@layout/fragment_search_dog1" />
+    <fragment
+        android:id="@+id/searchDog2Fragment"
+        android:name="com.example.pawprints.ui.search.SearchDog2Fragment"
+        android:label="fragment_search_dog2"
+        tools:layout="@layout/fragment_search_dog2" />
+    <fragment
+        android:id="@+id/searchDog3Fragment"
+        android:name="com.example.pawprints.ui.search.SearchDog3Fragment"
+        android:label="fragment_search_dog3"
+        tools:layout="@layout/fragment_search_dog3" />
+    <fragment
+        android:id="@+id/searchClinic1Fragment"
+        android:name="com.example.pawprints.ui.search.SearchClinic1Fragment"
+        android:label="fragment_search_clinic1"
+        tools:layout="@layout/fragment_search_clinic1" />
+    <fragment
+        android:id="@+id/searchClinic2Fragment"
+        android:name="com.example.pawprints.ui.search.SearchClinic2Fragment"
+        android:label="fragment_search_clinic2"
+        tools:layout="@layout/fragment_search_clinic2" />
+    <fragment
+        android:id="@+id/searchCenter1Fragment"
+        android:name="com.example.pawprints.ui.search.SearchCenter1Fragment"
+        android:label="fragment_search_center1"
+        tools:layout="@layout/fragment_search_center1" />
+    <fragment
+        android:id="@+id/searchCenter2Fragment"
+        android:name="com.example.pawprints.ui.search.SearchCenter2Fragment"
+        android:label="fragment_search_center2"
+        tools:layout="@layout/fragment_search_center2" />
 
 
 </navigation>
