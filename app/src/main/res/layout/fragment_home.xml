@@ -9,666 +9,686 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/f_top">
-
-        <TextView
-            android:id="@+id/pawprints"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/londrina_solid_black"
-            android:gravity="center_vertical"
-            android:paddingLeft="20dp"
-            android:text="PAWPRINTS"
-            android:textColor="@color/text_black"
-            android:textSize="30sp"/>
-
-        <ImageButton
-            android:id="@+id/chat"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="200dp"
-            android:background="@drawable/transparent_background"
-            android:contentDescription="chat"
-            android:src="@drawable/ic_icon_chat"
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="230dp" />
-
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="666dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/top">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/top"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/top">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="25dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/f_rounded_corner"
-                    app:layout_constraintTop_toBottomOf="@+id/top"
-                    android:gravity="right">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            app:shapeAppearanceOverlay="@style/CircledImageView"
-                            android:src="@drawable/img_example_lang"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:scaleType="centerCrop"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_circle_profile"
-                            android:layout_marginTop="17dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="17dp">
-
-                        </com.google.android.material.imageview.ShapeableImageView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="20dp"
-                                android:layout_marginTop="22dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:text="Mary Ann"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif-medium"
-                                    android:textColor="@color/text_black"
-                                    android:clickable="true"
-                                    android:focusable="true">
-
-                                </TextView>
-
-                                <TextView
-                                    android:text="•"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif"
-                                    android:layout_marginStart="8dp"
-                                    android:layout_marginEnd="8dp"
-                                    android:textColor="@color/text_black">
-
-                                </TextView>
-
-                                <TextView
-                                    android:text="follow"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif"
-                                    android:clickable="true"
-                                    android:focusable="true"
-                                    android:textSize="13dp"
-                                    android:textColor="@color/text_black">
-
-                                </TextView>
-
-                            </LinearLayout>
-
-                            <TextView
-                                android:text="3 hours ago"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:fontFamily="sans-serif"
-                                android:textSize="11dp"
-                                android:textColor="@color/dark_grey">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:text="I just adopted this sweet little puppy that have been rescued from the streest. I'm so happy!"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="30dp"
-                        android:textColor="@color/text_black"
-                        android:fontFamily="sans-serif"
-                        android:layout_marginBottom="5dp">
-
-                    </TextView>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingTop="5dp"
-                        android:gravity="bottom">
-
-                        <TextView
-                            android:text="Thank you, everyone!"
-                            android:layout_width="250dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="30dp"
-                            android:textColor="@color/text_black"
-                            android:fontFamily="sans-serif"
-                            android:layout_marginBottom="10dp">
-
-                        </TextView>
-
-                        <ImageButton
-                            android:contentDescription="heart"
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:background="@drawable/ic_icon_heart"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp">
-                        </ImageButton>
-
-                    </LinearLayout>
-
-
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/top">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="25dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/f_rounded_corner"
-                    app:layout_constraintTop_toBottomOf="@+id/top"
-                    android:gravity="right">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            app:shapeAppearanceOverlay="@style/CircledImageView"
-                            android:src="@drawable/img_example_lang"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:scaleType="centerCrop"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_circle_profile"
-                            android:layout_marginTop="17dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="17dp">
-
-                        </com.google.android.material.imageview.ShapeableImageView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="20dp"
-                                android:layout_marginTop="22dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:text="PAWPRINTS OFFICIAL"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif-black"
-                                    android:textColor="@color/text_black"
-                                    android:clickable="true"
-                                    android:focusable="true">
-
-                                </TextView>
-
-                                <TextView
-                                    android:text="•"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif"
-                                    android:layout_marginStart="8dp"
-                                    android:layout_marginEnd="8dp"
-                                    android:textColor="@color/text_black">
-
-                                </TextView>
-
-                                <TextView
-                                    android:text="follow"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif"
-                                    android:clickable="true"
-                                    android:focusable="true"
-                                    android:textSize="13dp"
-                                    android:textColor="@color/text_black">
-
-                                </TextView>
-
-                            </LinearLayout>
-
-                            <TextView
-                                android:text="1 day ago"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:fontFamily="sans-serif"
-                                android:textSize="11dp"
-                                android:textColor="@color/dark_grey">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="10dp"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="30dp"
-                        android:layout_marginBottom="5dp"
-                        android:src="@drawable/img_graph_post"
-                        android:scaleType="centerCrop"
-                        android:adjustViewBounds="true">
-
-                    </ImageView>
-
-                    <TextView
-                        android:text="For this month, 19 dogs have been adopted and found a home. "
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="30dp"
-                        android:textColor="@color/text_black"
-                        android:fontFamily="sans-serif"
-                        android:layout_marginBottom="5dp">
-
-                    </TextView>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingTop="5dp"
-                        android:gravity="bottom">
-
-                        <TextView
-                            android:text="15 stray dogs have been rescued and nursed back to health!"
-                            android:layout_width="250dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="30dp"
-                            android:textColor="@color/text_black"
-                            android:fontFamily="sans-serif"
-                            android:layout_marginBottom="10dp">
-
-                        </TextView>
-
-                        <ImageButton
-                            android:contentDescription="heart"
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:background="@drawable/ic_icon_heart"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp">
-                        </ImageButton>
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="10dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/top">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="25dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/f_rounded_corner"
-                    app:layout_constraintTop_toBottomOf="@+id/top"
-                    android:gravity="right">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            app:shapeAppearanceOverlay="@style/CircledImageView"
-                            android:src="@drawable/img_example_lang"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:scaleType="centerCrop"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_circle_profile"
-                            android:layout_marginTop="17dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="17dp">
-
-                        </com.google.android.material.imageview.ShapeableImageView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="20dp"
-                                android:layout_marginTop="22dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:text="Emmanuel John"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif-medium"
-                                    android:textColor="@color/text_black"
-                                    android:clickable="true"
-                                    android:focusable="true">
-
-                                </TextView>
-
-                                <TextView
-                                    android:text="•"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif"
-                                    android:layout_marginStart="8dp"
-                                    android:layout_marginEnd="8dp"
-                                    android:textColor="@color/text_black">
-
-                                </TextView>
-
-                                <TextView
-                                    android:text="follow"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif"
-                                    android:clickable="true"
-                                    android:focusable="true"
-                                    android:textSize="13dp"
-                                    android:textColor="@color/text_black">
-
-                                </TextView>
-
-                            </LinearLayout>
-
-                            <TextView
-                                android:text="1 day ago"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:fontFamily="sans-serif"
-                                android:textSize="11dp"
-                                android:textColor="@color/dark_grey">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:text="My dog was taken to the emergency room today... If it weren’t for this app, I wouldn’t have known where to go..."
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="30dp"
-                        android:textColor="@color/text_black"
-                        android:fontFamily="sans-serif"
-                        android:layout_marginBottom="5dp">
-
-                    </TextView>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingTop="5dp">
-
-                        <TextView
-                            android:text="Thank you!"
-                            android:layout_width="250dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="30dp"
-                            android:textColor="@color/text_black"
-                            android:fontFamily="sans-serif"
-                            android:layout_marginBottom="10dp">
-
-                        </TextView>
-
-                        <ImageButton
-                            android:contentDescription="heart"
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:background="@drawable/ic_icon_heart"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp">
-                        </ImageButton>
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="150dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/top">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginRight="25dp"
-                    android:orientation="vertical"
-                    android:background="@drawable/f_rounded_corner"
-                    app:layout_constraintTop_toBottomOf="@+id/top"
-                    android:gravity="right">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="65dp"
-                        android:orientation="horizontal">
-
-                        <com.google.android.material.imageview.ShapeableImageView
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            app:shapeAppearanceOverlay="@style/CircledImageView"
-                            android:src="@drawable/img_example_lang"
-                            android:clickable="true"
-                            android:focusable="true"
-                            android:scaleType="centerCrop"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_circle_profile"
-                            android:layout_marginTop="17dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginEnd="17dp">
-
-                        </com.google.android.material.imageview.ShapeableImageView>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="20dp"
-                                android:layout_marginTop="22dp"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:text="Mark Tahimik"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif-medium"
-                                    android:textColor="@color/text_black"
-                                    android:clickable="true"
-                                    android:focusable="true">
-
-                                </TextView>
-
-                                <TextView
-                                    android:text="•"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif"
-                                    android:layout_marginStart="8dp"
-                                    android:layout_marginEnd="8dp"
-                                    android:textColor="@color/text_black">
-
-                                </TextView>
-
-                                <TextView
-                                    android:text="follow"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="match_parent"
-                                    android:fontFamily="sans-serif"
-                                    android:clickable="true"
-                                    android:focusable="true"
-                                    android:textSize="13dp"
-                                    android:textColor="@color/text_black">
-
-                                </TextView>
-
-                            </LinearLayout>
-
-                            <TextView
-                                android:text="2 days ago"
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:fontFamily="sans-serif"
-                                android:textSize="11dp"
-                                android:textColor="@color/dark_grey">
-
-                            </TextView>
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:text="Woof Woof!"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="25dp"
-                        android:layout_marginEnd="30dp"
-                        android:textColor="@color/text_black"
-                        android:fontFamily="sans-serif"
-                        android:layout_marginBottom="5dp">
-
-                    </TextView>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:paddingTop="5dp">
-
-                        <TextView
-                            android:text="Empty"
-                            android:layout_width="250dp"
-                            android:layout_height="wrap_content"
-                            android:layout_marginStart="25dp"
-                            android:layout_marginEnd="30dp"
-                            android:textColor="@color/text_black"
-                            android:fontFamily="sans-serif"
-                            android:layout_marginBottom="10dp">
-
-                        </TextView>
-
-                        <ImageButton
-                            android:contentDescription="heart"
-                            android:layout_width="45dp"
-                            android:layout_height="45dp"
-                            android:background="@drawable/ic_icon_heart"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp">
-                        </ImageButton>
-
-                    </LinearLayout>
-
-
-                </LinearLayout>
-
-            </LinearLayout>
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center_vertical"
+            android:background="@drawable/f_top">
+
+            <TextView
+                android:id="@+id/pawprints"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/londrina_solid_black"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="PAWPRINTS"
+                android:textColor="@color/text_black"
+                android:textSize="30sp"/>
+
+            <ImageButton
+                android:id="@+id/addpost"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="150dp"
+                android:background="@drawable/transparent_background"
+                android:contentDescription="chat"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_icon_add_post"
+                />
+
+            <ImageButton
+                android:id="@+id/chat"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/transparent_background"
+                android:contentDescription="chat"
+                android:src="@drawable/ic_icon_chat"
+                tools:layout_editor_absoluteX="173dp"
+                tools:layout_editor_absoluteY="230dp" />
 
         </LinearLayout>
 
-    </ScrollView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/top">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/f_rounded_corner"
+                        app:layout_constraintTop_toBottomOf="@+id/top"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                app:shapeAppearanceOverlay="@style/CircledImageView"
+                                android:src="@drawable/img_example_lang"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_circle_profile"
+                                android:layout_marginTop="17dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="17dp">
+
+                            </com.google.android.material.imageview.ShapeableImageView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="22dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:text="Mary Ann"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/text_black"
+                                        android:clickable="true"
+                                        android:focusable="true">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="•"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="follow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="3 hours ago"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="sans-serif"
+                                    android:textSize="11dp"
+                                    android:textColor="@color/dark_grey">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:text="I just adopted this sweet little puppy that have been rescued from the streest. I'm so happy!"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="30dp"
+                            android:textColor="@color/text_black"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginBottom="5dp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:text="Thank you, everyone!"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginEnd="30dp"
+                                android:textColor="@color/text_black"
+                                android:fontFamily="sans-serif"
+                                android:layout_marginBottom="10dp">
+
+                            </TextView>
+
+                            <ImageButton
+                                android:contentDescription="heart"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/ic_icon_heart"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp">
+                            </ImageButton>
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/f_rounded_corner"
+                        app:layout_constraintTop_toBottomOf="@+id/top"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                app:shapeAppearanceOverlay="@style/CircledImageView"
+                                android:src="@drawable/img_example_lang"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_circle_profile"
+                                android:layout_marginTop="17dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="17dp">
+
+                            </com.google.android.material.imageview.ShapeableImageView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="22dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:text="PAWPRINTS OFFICIAL"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif-black"
+                                        android:textColor="@color/text_black"
+                                        android:clickable="true"
+                                        android:focusable="true">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="•"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="follow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="1 day ago"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="sans-serif"
+                                    android:textSize="11dp"
+                                    android:textColor="@color/dark_grey">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/img_graph_post"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true">
+
+                        </ImageView>
+
+                        <TextView
+                            android:text="For this month, 19 dogs have been adopted and found a home. "
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="30dp"
+                            android:textColor="@color/text_black"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginBottom="5dp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:text="15 stray dogs have been rescued and nursed back to health!"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginEnd="30dp"
+                                android:textColor="@color/text_black"
+                                android:fontFamily="sans-serif"
+                                android:layout_marginBottom="10dp">
+
+                            </TextView>
+
+                            <ImageButton
+                                android:contentDescription="heart"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/ic_icon_heart"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp">
+                            </ImageButton>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/f_rounded_corner"
+                        app:layout_constraintTop_toBottomOf="@+id/top"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                app:shapeAppearanceOverlay="@style/CircledImageView"
+                                android:src="@drawable/img_example_lang"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_circle_profile"
+                                android:layout_marginTop="17dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="17dp">
+
+                            </com.google.android.material.imageview.ShapeableImageView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="22dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:text="Emmanuel John"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/text_black"
+                                        android:clickable="true"
+                                        android:focusable="true">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="•"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="follow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="1 day ago"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="sans-serif"
+                                    android:textSize="11dp"
+                                    android:textColor="@color/dark_grey">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:text="My dog was taken to the emergency room today... If it weren’t for this app, I wouldn’t have known where to go..."
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="30dp"
+                            android:textColor="@color/text_black"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginBottom="5dp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:text="Thank you!"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginEnd="30dp"
+                                android:textColor="@color/text_black"
+                                android:fontFamily="sans-serif"
+                                android:layout_marginBottom="10dp">
+
+                            </TextView>
+
+                            <ImageButton
+                                android:contentDescription="heart"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/ic_icon_heart"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp">
+                            </ImageButton>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="100dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/f_rounded_corner"
+                        app:layout_constraintTop_toBottomOf="@+id/top"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                app:shapeAppearanceOverlay="@style/CircledImageView"
+                                android:src="@drawable/img_example_lang"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_circle_profile"
+                                android:layout_marginTop="17dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="17dp">
+
+                            </com.google.android.material.imageview.ShapeableImageView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="22dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:text="Mark Tahimik"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/text_black"
+                                        android:clickable="true"
+                                        android:focusable="true">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="•"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="follow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:textSize="13dp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="2 days ago"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="sans-serif"
+                                    android:textSize="11dp"
+                                    android:textColor="@color/dark_grey">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:text="Woof Woof!"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="30dp"
+                            android:textColor="@color/text_black"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginBottom="5dp">
+
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:text="Empty"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginEnd="30dp"
+                                android:textColor="@color/text_black"
+                                android:fontFamily="sans-serif"
+                                android:layout_marginBottom="10dp">
+
+                            </TextView>
+
+                            <ImageButton
+                                android:contentDescription="heart"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/ic_icon_heart"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp">
+                            </ImageButton>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
 
 

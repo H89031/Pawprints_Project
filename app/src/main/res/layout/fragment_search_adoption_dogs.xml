@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.search.SearchAdoptionDogsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/f_top"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/pawprints"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/londrina_solid_black"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="PAWPRINTS"
+                android:textColor="@color/text_black"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/chat"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="200dp"
+                android:background="@drawable/transparent_background"
+                android:contentDescription="chat"
+                android:src="@drawable/ic_icon_chat"
+                tools:layout_editor_absoluteX="173dp"
+                tools:layout_editor_absoluteY="230dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/f_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="sans-serif-black"
+                android:text="For Adoption"
+                android:textColor="@color/text_black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corner"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/transparent_background"
+                    android:layout_height="17dp"
+                    android:scaleType="centerCrop"
+                    android:gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_icon_search_chat"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:hint="Search"
+                    android:inputType="text"
+                    android:background="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="14sp">
+
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:contentDescription="blahblah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/img_example_lang"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:contentDescription="blahblah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/img_example_lang"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:contentDescription="blahblah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/img_example_lang"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="175dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="100dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:contentDescription="blahblah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/img_example_lang"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:contentDescription="blahblah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/img_example_lang"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true">
+
+                    </ImageView>
+
+                    <ImageView
+                        android:contentDescription="blahblah"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:src="@drawable/img_example_lang"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+
+    </LinearLayout>
+
+</FrameLayout>

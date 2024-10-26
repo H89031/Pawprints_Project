@@ -10,36 +10,668 @@
     tools:context=".Chat">
 
     <LinearLayout
-        android:id="@+id/top"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:background="@drawable/f_top">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/pawprints"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/londrina_solid_black"
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
             android:gravity="center_vertical"
-            android:paddingLeft="20dp"
-            android:text="PAWPRINTS"
-            android:textColor="@color/text_black"
-            android:textSize="30sp"/>
+            android:background="@drawable/f_top">
 
-        <ImageButton
-            android:id="@+id/chat"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="200dp"
-            android:background="@drawable/transparent_background"
-            android:contentDescription="chat"
-            android:src="@drawable/ic_icon_chat"
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="230dp" />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:background="@drawable/transparent_background"
+                android:layout_height="25dp"
+                android:scaleType="centerCrop"
+                android:gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_icon_back"/>
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="user.name"
+                android:textColor="@color/text_black"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:background="@drawable/transparent_background"
+                android:layout_height="32dp"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:gravity="center_vertical"
+                android:src="@drawable/ic_icon_new_chat"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/light_grey">
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/f_top">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Messages"
+                android:textColor="@color/text_black"
+                android:textSize="20sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="235dp"
+                android:layout_height="30dp"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_corner"
+                android:layout_marginStart="20dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/transparent_background"
+                    android:layout_height="17dp"
+                    android:scaleType="centerCrop"
+                    android:gravity="center_vertical"
+                    android:adjustViewBounds="true"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/ic_icon_search_chat"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:hint="Search"
+                    android:inputType="text"
+                    android:background="@color/white"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/light_grey"
+                    android:textSize="14sp">
+
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Maria Estera"
+                            android:textColor="@color/text_black"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Good Morning Ma’am O...   •   7:10 pm"
+                            android:textColor="@color/text_black"
+                            android:textSize="14sp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/transparent_background"
+                        android:layout_height="20dp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_nav_color_circle"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Vet Avenue Animal Clinic"
+                            android:textColor="#8c8f96"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="You: Ah okay po  •   5:46 pm"
+                            android:textColor="#8c8f96"
+                            android:textSize="14sp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/transparent_background"
+                        android:layout_height="23dp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_icon_delivered"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="QC Dog Owners"
+                            android:textColor="#8c8f96"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="You: Diba yung kanina s...   •   5:03 pm"
+                            android:textColor="#8c8f96"
+                            android:textSize="14sp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/transparent_background"
+                        android:layout_height="23dp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_icon_sent"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Jopay"
+                            android:textColor="#8c8f96"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="Kamusta ka na?   •   2:55 pm"
+                            android:textColor="#8c8f96"
+                            android:textSize="14sp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Dog Health"
+                            android:textColor="@color/text_black"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Fil: Attention all dog o...   •   Friday"
+                            android:textColor="@color/text_black"
+                            android:textSize="14sp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/transparent_background"
+                        android:layout_height="20dp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_nav_color_circle"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="The project"
+                            android:textColor="#8c8f96"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="You: Watchu think?   •   Tuesday"
+                            android:textColor="#8c8f96"
+                            android:textSize="14sp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/transparent_background"
+                        android:layout_height="23dp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_icon_delivered"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Jose Rizal"
+                            android:textColor="#8c8f96"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="The patrioism of the P...   •   Feb 1"
+                            android:textColor="#8c8f96"
+                            android:textSize="14sp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Juan Carlos"
+                            android:textColor="#8c8f96"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="You: Oh diba~ Nakaka...   •   Jan 25"
+                            android:textColor="#8c8f96"
+                            android:textSize="14sp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="17dp"
+                        android:layout_height="17dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="90dp"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="horizontal"
+                    android:clickable="false"
+                    android:gravity="center_vertical"
+                    android:background="@color/white">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:shapeAppearanceOverlay="@style/CircledImageView"
+                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:layout_marginStart="20dp"
+                        android:background="@drawable/f_circle_profile">
+
+                    </com.google.android.material.imageview.ShapeableImageView>
+
+                    <LinearLayout
+                        android:layout_marginStart="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_width="260dp"
+                        android:layout_height="50dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-medium"
+                            android:text="Andres Bonifacio"
+                            android:textColor="#8c8f96"
+                            android:textSize="18sp"
+                            android:layout_marginBottom="5dp">
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif"
+                            android:text="You: Long Live po   •   Dec 25"
+                            android:textColor="#8c8f96"
+                            android:textSize="14sp">
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:background="@drawable/transparent_background"
+                        android:layout_height="23dp"
+                        android:scaleType="centerCrop"
+                        android:adjustViewBounds="true"
+                        android:gravity="center_vertical"
+                        android:src="@drawable/ic_icon_sent"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
 
     </LinearLayout>
 
