@@ -30,7 +30,7 @@
                 android:layout_height="match_parent"
                 android:fontFamily="@font/londrina_solid_black"
                 android:gravity="center_vertical"
-                android:paddingLeft="20dp"
+                android:paddingStart="20dp"
                 android:text="PAWPRINTS"
                 android:textColor="@color/text_black"
                 android:textSize="30sp" />
@@ -39,7 +39,7 @@
                 android:id="@+id/chat"
                 android:layout_width="50dp"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="200dp"
+                android:layout_marginStart="200dp"
                 android:background="@drawable/transparent_background"
                 android:contentDescription="chat"
                 android:src="@drawable/ic_icon_chat"
@@ -101,7 +101,7 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
                 android:gravity="center"
-                android:layout_marginBottom="25dp">
+                android:layout_marginBottom="35dp">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
@@ -199,7 +199,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="45dp"
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_marginTop="10dp"
@@ -207,7 +207,7 @@
 
             <LinearLayout
                 android:background="@drawable/f_rounded_white"
-                android:layout_width="160dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
@@ -227,7 +227,7 @@
                     android:text="Profile"
                     android:textColor="@color/text_black"
                     android:fontFamily="sans-serif-medium"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -237,7 +237,7 @@
 
             <LinearLayout
                 android:background="@drawable/f_rounded_white"
-                android:layout_width="160dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
@@ -257,7 +257,7 @@
                     android:text="Verification"
                     android:textColor="@color/text_black"
                     android:fontFamily="sans-serif-medium"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -269,7 +269,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="45dp"
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_marginTop="2dp"
@@ -277,7 +277,7 @@
 
             <LinearLayout
                 android:background="@drawable/f_rounded_white"
-                android:layout_width="160dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
@@ -297,7 +297,7 @@
                     android:text="Archive"
                     android:textColor="@color/text_black"
                     android:fontFamily="sans-serif-medium"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -307,7 +307,7 @@
 
             <LinearLayout
                 android:background="@drawable/f_rounded_white"
-                android:layout_width="160dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
@@ -327,7 +327,7 @@
                     android:text="Bookmarks"
                     android:textColor="@color/text_black"
                     android:fontFamily="sans-serif-medium"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -339,7 +339,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="45dp"
             android:orientation="horizontal"
             android:gravity="center"
             android:layout_marginTop="2dp"
@@ -347,7 +347,7 @@
 
             <LinearLayout
                 android:background="@drawable/f_rounded_white"
-                android:layout_width="160dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
@@ -367,7 +367,7 @@
                     android:text="Activity Log"
                     android:textColor="@color/text_black"
                     android:fontFamily="sans-serif-medium"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -377,7 +377,7 @@
 
             <LinearLayout
                 android:background="@drawable/f_rounded_white"
-                android:layout_width="160dp"
+                android:layout_width="170dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="5dp"
                 android:layout_marginEnd="5dp"
@@ -398,7 +398,7 @@
                     android:text="Achievements"
                     android:textColor="@color/text_black"
                     android:fontFamily="sans-serif-medium"
-                    android:textSize="12sp"
+                    android:textSize="14sp"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
 
@@ -410,12 +410,12 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:background="@color/white"
             android:gravity="center_vertical"
             android:layout_marginTop="8dp"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="7dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -430,7 +430,7 @@
                 android:text="Settings"
                 android:textColor="@color/text_black"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content">
 
@@ -449,11 +449,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:background="@color/white"
             android:gravity="center_vertical"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="7dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -468,7 +468,7 @@
                 android:text="About"
                 android:textColor="@color/text_black"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content">
 
@@ -487,11 +487,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:background="@color/white"
             android:gravity="center_vertical"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="7dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -506,7 +506,7 @@
                 android:text="Privacy"
                 android:textColor="@color/text_black"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content">
 
@@ -525,11 +525,11 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="50dp"
             android:orientation="horizontal"
             android:background="@color/white"
             android:gravity="center_vertical"
-            android:layout_marginBottom="5dp">
+            android:layout_marginBottom="7dp">
 
             <ImageView
                 android:layout_width="30dp"
@@ -544,7 +544,7 @@
                 android:text="Support"
                 android:textColor="@color/text_black"
                 android:fontFamily="sans-serif-medium"
-                android:textSize="13sp"
+                android:textSize="15sp"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content">
 
@@ -568,7 +568,7 @@
             android:textColor="@color/white"
             android:layout_width="150dp"
             android:layout_height="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="15dp"
             android:background="@drawable/f_rounded_grey">
 
         </Button>

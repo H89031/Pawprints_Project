@@ -9,366 +9,373 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
         android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="@drawable/f_top"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/pawprints"
-            android:layout_width="150dp"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/londrina_solid_black"
-            android:gravity="center_vertical"
-            android:paddingLeft="20dp"
-            android:text="PAWPRINTS"
-            android:textColor="@color/text_black"
-            android:textSize="30sp" />
-
-        <ImageButton
-            android:id="@+id/chat"
-            android:layout_width="50dp"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="200dp"
-            android:background="@drawable/transparent_background"
-            android:contentDescription="chat"
-            android:src="@drawable/ic_icon_chat"
-            tools:layout_editor_absoluteX="173dp"
-            tools:layout_editor_absoluteY="230dp" />
-
-
-    </LinearLayout>
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="666dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
         <LinearLayout
+            android:id="@+id/linearLayout3"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="65dp"
+            android:background="@drawable/f_top"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:id="@+id/ad"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+            <TextView
+                android:id="@+id/pawprints"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/londrina_solid_black"
+                android:gravity="center_vertical"
+                android:paddingStart="20dp"
+                android:text="PAWPRINTS"
+                android:textColor="@color/text_black"
+                android:textSize="30sp" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/img_report_page">
+            <ImageButton
+                android:id="@+id/chat"
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="200dp"
+                android:background="@drawable/transparent_background"
+                android:contentDescription="chat"
+                android:src="@drawable/ic_icon_chat"
+                tools:layout_editor_absoluteX="173dp"
+                tools:layout_editor_absoluteY="230dp" />
 
-                </ImageView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/buttons"
-                android:layout_width="match_parent"
-                android:layout_height="70dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/ad"
-                android:gravity="center">
-
-                <LinearLayout
-                    android:background="@drawable/f_rounded_purple"
-                    android:layout_width="175dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp">
-                    <Button
-                        android:text=" REPORT MISSING DOG"
-                        android:textColor="@color/white"
-                        android:fontFamily="sans-serif-black"
-                        android:background="@color/dark_purple"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginBottom="12dp">
-                    </Button>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:background="@drawable/f_rounded_purple"
-                    android:layout_width="175dp"
-                    android:layout_height="match_parent"
-                    android:layout_margin="5dp">
-                    <Button
-                        android:text=" REPORT STRAY DOG"
-                        android:textColor="@color/white"
-                        android:fontFamily="sans-serif-black"
-                        android:background="@color/dark_purple"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginBottom="12dp">
-                    </Button>
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/missingdogs"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginTop="10dp"
-                android:background="@color/white"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/buttons">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="310dp"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-black"
-                        android:paddingLeft="15dp"
-                        android:paddingTop="10dp"
-                        android:text="Nearest Missing Dogs Reports"
-                        android:textColor="@color/text_black" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:clickable="true"
-                        android:fontFamily="sans-serif-medium"
-                        android:gravity="bottom|right"
-                        android:paddingRight="15dp"
-                        android:text="See more >"
-                        android:textColor="@color/purple"
-                        android:textSize="13sp"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </LinearLayout>
-
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scrollbarSize="5dp"
-                    android:scrollbarStyle="outsideOverlay">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:layout_marginRight="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                    </LinearLayout>
-
-                </HorizontalScrollView>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/straydogs"
-                android:layout_width="match_parent"
-                android:layout_height="180dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="150dp"
-                android:background="@color/white"
-                android:orientation="vertical"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/missingdogs">
-
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="30dp"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:layout_width="310dp"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-black"
-                        android:paddingLeft="15dp"
-                        android:paddingTop="10dp"
-                        android:text="Stray Dogs Around the Area"
-                        android:textColor="@color/text_black" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:clickable="true"
-                        android:fontFamily="sans-serif-medium"
-                        android:gravity="bottom|right"
-                        android:paddingRight="15dp"
-                        android:text="See more >"
-                        android:textColor="@color/purple"
-                        android:textSize="13sp"
-                        tools:ignore="TouchTargetSizeCheck" />
-
-                </LinearLayout>
-
-                <HorizontalScrollView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scrollbarSize="5dp"
-                    android:scrollbarStyle="outsideOverlay">
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                        <ImageButton
-                            android:layout_width="85dp"
-                            android:layout_height="fill_parent"
-                            android:layout_marginLeft="8dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:layout_marginRight="15dp"
-                            android:adjustViewBounds="true"
-                            android:background="@drawable/f_rounded_corner"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/img_example_lang"
-                            android:contentDescription="dog"
-                            android:clickable="true"/>
-
-                    </LinearLayout>
-
-                </HorizontalScrollView>
-
-            </LinearLayout>
 
         </LinearLayout>
 
-    </ScrollView>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linearLayout3">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/ad"
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/img_report_page">
+
+                    </ImageView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ad"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:background="@drawable/f_rounded_purple"
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp">
+                        <Button
+                            android:text=" REPORT MISSING DOG"
+                            android:textColor="@color/white"
+                            android:fontFamily="sans-serif-black"
+                            android:background="@color/dark_purple"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp">
+                        </Button>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:background="@drawable/f_rounded_purple"
+                        android:layout_width="175dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp">
+                        <Button
+                            android:text=" REPORT STRAY DOG"
+                            android:textColor="@color/white"
+                            android:fontFamily="sans-serif-black"
+                            android:background="@color/dark_purple"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginBottom="12dp">
+                        </Button>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/missingdogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/buttons">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingStart="15dp"
+                            android:paddingTop="10dp"
+                            android:text="Nearest Missing Dogs Reports"
+                            android:textColor="@color/text_black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="bottom|right"
+                            android:paddingEnd="15dp"
+                            android:text="See more >"
+                            android:textColor="@color/purple"
+                            android:textSize="13sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="5dp"
+                        android:scrollbarStyle="outsideOverlay">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/straydogs"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/missingdogs">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="310dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:paddingStart="15dp"
+                            android:paddingTop="10dp"
+                            android:text="Stray Dogs Around the Area"
+                            android:textColor="@color/text_black" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:clickable="true"
+                            android:fontFamily="sans-serif-medium"
+                            android:gravity="bottom|right"
+                            android:paddingEnd="15dp"
+                            android:text="See more >"
+                            android:textColor="@color/purple"
+                            android:textSize="13sp"
+                            tools:ignore="TouchTargetSizeCheck" />
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbarSize="5dp"
+                        android:scrollbarStyle="outsideOverlay">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                            <ImageButton
+                                android:layout_width="95dp"
+                                android:layout_height="fill_parent"
+                                android:layout_marginStart="8dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_rounded_corner"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/img_example_lang"
+                                android:contentDescription="dog"
+                                android:clickable="true"/>
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

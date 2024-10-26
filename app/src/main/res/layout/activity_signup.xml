@@ -81,20 +81,72 @@
         </EditText>
 
 
-        <EditText
-            android:id="@+id/birthdate"
-            android:layout_width="230dp"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/f_rounded_corner"
-            android:hint="MM / DD / YY"
-            android:inputType="date"
-            android:padding="10dp"
-            android:textColor="@color/black"
-            android:textColorHint="@color/light_grey"
-            android:textSize="15sp">
+            android:orientation="horizontal">
 
-        </EditText>
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp">
+
+                <TextView
+                    android:id="@+id/birth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="left|center_vertical"
+                    android:text="Birth"
+                    android:textColor="@color/light_grey"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.175"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.400">
+
+                </TextView>
+
+                <TextView
+                    android:id="@+id/birth2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:gravity="left|center_vertical"
+                    android:text="Date"
+                    android:textColor="@color/light_grey"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.175"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.430">
+
+                </TextView>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/birthdate"
+                android:layout_width="230dp"
+                android:layout_height="48dp"
+                android:background="@drawable/f_rounded_corner"
+                android:hint="MM / DD / YY"
+                android:inputType="date"
+                android:padding="10dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_grey"
+                android:textSize="15sp">
+
+            </EditText>
+
+        </LinearLayout>
 
         <EditText
             android:id="@+id/phone"
@@ -196,41 +248,7 @@
 
     </LinearLayout>
 
-    <TextView
-        android:id="@+id/birth"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="left|center_vertical"
-        android:text="Birth"
-        android:textColor="@color/light_grey"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.400">
 
-    </TextView>
-
-    <TextView
-        android:id="@+id/birth2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:gravity="left|center_vertical"
-        android:text="Date"
-        android:textColor="@color/light_grey"
-        android:textSize="15sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.175"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.430">
-
-    </TextView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
