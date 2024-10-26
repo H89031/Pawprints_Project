@@ -28,13 +28,47 @@
         <action
             android:id="@+id/action_navigation_home_to_homeProfile2Fragment"
             app:destination="@id/homeProfile2Fragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_homeAddPostFragment"
+            app:destination="@id/homeAddPostFragment" />
     </fragment>
 
     <fragment
         android:id="@+id/navigation_report"
         android:name="com.example.pawprints.ui.report.ReportFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_report" />
+        tools:layout="@layout/fragment_report" >
+        <action
+            android:id="@+id/action_navigation_report_to_RMissingDogFragment"
+            app:destination="@id/RMissingDogFragment" />
+        <action
+            android:id="@+id/action_navigation_report_to_RStrayDogFragment"
+            app:destination="@id/RStrayDogFragment" />
+        <action
+            android:id="@+id/action_navigation_report_to_reportMissingFragment"
+            app:destination="@id/reportMissingFragment" />
+        <action
+            android:id="@+id/action_navigation_report_to_reportStrayFragment"
+            app:destination="@id/reportStrayFragment" />
+        <action
+            android:id="@+id/action_navigation_report_to_reportMissingDog1Fragment"
+            app:destination="@id/reportMissingDog1Fragment" />
+        <action
+            android:id="@+id/action_navigation_report_to_reportMissingDog2Fragment"
+            app:destination="@id/reportMissingDog2Fragment" />
+        <action
+            android:id="@+id/action_navigation_report_to_reportMissingDog3Fragment"
+            app:destination="@id/reportMissingDog3Fragment" />
+        <action
+            android:id="@+id/action_navigation_report_to_reportStrayDog1Fragment"
+            app:destination="@id/reportStrayDog1Fragment" />
+        <action
+            android:id="@+id/action_navigation_report_to_reportStrayDog2Fragment"
+            app:destination="@id/reportStrayDog2Fragment" />
+        <action
+            android:id="@+id/action_navigation_report_to_reportStrayDog3Fragment"
+            app:destination="@id/reportStrayDog3Fragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_profile"
@@ -51,6 +85,61 @@
         android:name="com.example.pawprints.ui.home.HomeProfile2Fragment"
         android:label="fragment_home_profile2"
         tools:layout="@layout/fragment_home_profile2" />
+    <fragment
+        android:id="@+id/homeAddPostFragment"
+        android:name="com.example.pawprints.ui.home.HomeAddPostFragment"
+        android:label="HomeAddPostFragment"
+        tools:layout="@layout/fragment_home_add_post"/>
+    <fragment
+        android:id="@+id/RMissingDogFragment"
+        android:name="com.example.pawprints.ui.report.RMissingDogFragment"
+        android:label="fragment_r_missing_dog"
+        tools:layout="@layout/fragment_r_missing_dog" />
+    <fragment
+        android:id="@+id/RStrayDogFragment"
+        android:name="com.example.pawprints.ui.report.RStrayDogFragment"
+        android:label="fragment_r_stray_dog"
+        tools:layout="@layout/fragment_r_stray_dog" />
+    <fragment
+        android:id="@+id/reportMissingFragment"
+        android:name="com.example.pawprints.ui.report.ReportMissingFragment"
+        android:label="fragment_report_missing"
+        tools:layout="@layout/fragment_report_missing" />
+    <fragment
+        android:id="@+id/reportStrayFragment"
+        android:name="com.example.pawprints.ui.report.ReportStrayFragment"
+        android:label="fragment_report_stray"
+        tools:layout="@layout/fragment_report_stray" />
+    <fragment
+        android:id="@+id/reportMissingDog1Fragment"
+        android:name="com.example.pawprints.ui.report.ReportMissingDog1Fragment"
+        android:label="fragment_report_missing_dog1"
+        tools:layout="@layout/fragment_report_missing_dog1" />
+    <fragment
+        android:id="@+id/reportMissingDog2Fragment"
+        android:name="com.example.pawprints.ui.report.ReportMissingDog2Fragment"
+        android:label="fragment_report_missing_dog2"
+        tools:layout="@layout/fragment_report_missing_dog2" />
+    <fragment
+        android:id="@+id/reportMissingDog3Fragment"
+        android:name="com.example.pawprints.ui.report.ReportMissingDog3Fragment"
+        android:label="fragment_report_missing_dog3"
+        tools:layout="@layout/fragment_report_missing_dog3" />
+    <fragment
+        android:id="@+id/reportStrayDog1Fragment"
+        android:name="com.example.pawprints.ui.report.ReportStrayDog1Fragment"
+        android:label="fragment_report_stray_dog1"
+        tools:layout="@layout/fragment_report_stray_dog1" />
+    <fragment
+        android:id="@+id/reportStrayDog2Fragment"
+        android:name="com.example.pawprints.ui.report.ReportStrayDog2Fragment"
+        android:label="fragment_report_stray_dog2"
+        tools:layout="@layout/fragment_report_stray_dog2" />
+    <fragment
+        android:id="@+id/reportStrayDog3Fragment"
+        android:name="com.example.pawprints.ui.report.ReportStrayDog3Fragment"
+        android:label="fragment_report_stray_dog3"
+        tools:layout="@layout/fragment_report_stray_dog3" />
 
 
 </navigation>

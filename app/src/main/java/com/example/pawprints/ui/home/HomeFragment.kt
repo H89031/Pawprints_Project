@@ -32,6 +32,11 @@ class HomeFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val posts: ImageButton = view.findViewById(R.id.addpost)
+        posts.setOnClickListener {
+            view.findNavController().navigate(R.id.action_navigation_home_to_homeAddPostFragment)
+        }
+
         val Images: ImageView = view.findViewById(R.id.person1)
         Images.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_home_to_homeProfile1Fragment)
