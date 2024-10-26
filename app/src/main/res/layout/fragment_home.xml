@@ -98,6 +98,7 @@
                             android:orientation="horizontal">
 
                             <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/person1"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 app:shapeAppearanceOverlay="@style/CircledImageView"
@@ -126,6 +127,8 @@
 
                                     <TextView
                                         android:text="Mary Ann"
+                                        android:id="@+id/name1"
+                                        android:onClick="nameClick"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:fontFamily="sans-serif-medium"
@@ -412,6 +415,7 @@
                             android:orientation="horizontal">
 
                             <com.google.android.material.imageview.ShapeableImageView
+                                android:id="@+id/person2"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 app:shapeAppearanceOverlay="@style/CircledImageView"
@@ -439,6 +443,7 @@
                                     android:orientation="horizontal">
 
                                     <TextView
+                                        android:id="@+id/name2"
                                         android:text="Emmanuel John"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"

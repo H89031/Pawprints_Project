@@ -21,7 +21,14 @@
         android:id="@+id/navigation_home"
         android:name="com.example.pawprints.ui.home.HomeFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_homeProfile1Fragment"
+            app:destination="@id/homeProfile1Fragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_homeProfile2Fragment"
+            app:destination="@id/homeProfile2Fragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_report"
@@ -34,6 +41,16 @@
         android:name="com.example.pawprints.ui.profile.ProfileFragment"
         android:label="@string/title_home"
         tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/homeProfile1Fragment"
+        android:name="com.example.pawprints.ui.home.HomeProfile1Fragment"
+        android:label="fragment_home_profile1"
+        tools:layout="@layout/fragment_home_profile1" />
+    <fragment
+        android:id="@+id/homeProfile2Fragment"
+        android:name="com.example.pawprints.ui.home.HomeProfile2Fragment"
+        android:label="fragment_home_profile2"
+        tools:layout="@layout/fragment_home_profile2" />
 
 
 </navigation>
