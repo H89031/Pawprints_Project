@@ -112,6 +112,7 @@
                 android:orientation="vertical">
 
                 <LinearLayout
+                    android:id="@id/centers1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"
@@ -211,6 +212,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@id/centers2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@color/white"

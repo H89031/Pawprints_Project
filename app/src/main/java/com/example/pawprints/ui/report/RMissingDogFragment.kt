@@ -5,6 +5,9 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.ImageView
+import androidx.navigation.findNavController
 import com.example.pawprints.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -27,6 +30,21 @@ class RMissingDogFragment : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+        }
+    }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val mdoge1: ImageView = view.findViewById(R.id.mDog1)
+        mdoge1.setOnClickListener {
+            view.findNavController().navigate(R.id.action_RMissingDogFragment_to_reportMissingDog1Fragment)
+        }
+        val mdoge2: ImageView = view.findViewById(R.id.mDog2)
+        mdoge2.setOnClickListener {
+            view.findNavController().navigate(R.id.action_RMissingDogFragment_to_reportMissingDog2Fragment)
+        }
+        val mdoge3: ImageView = view.findViewById(R.id.mDog3)
+        mdoge3.setOnClickListener {
+            view.findNavController().navigate(R.id.action_RMissingDogFragment_to_reportMissingDog3Fragment)
         }
     }
 

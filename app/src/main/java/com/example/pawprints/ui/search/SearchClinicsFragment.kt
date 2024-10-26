@@ -5,6 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageButton
+import android.widget.ImageView
+import android.widget.LinearLayout
+import androidx.navigation.findNavController
 import com.example.pawprints.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -27,6 +31,19 @@ class SearchClinicsFragment : Fragment() {
         arguments?.let {
             param1 = it.getString(ARG_PARAM1)
             param2 = it.getString(ARG_PARAM2)
+        }
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        ///////////////
+        val leclinic1: LinearLayout = view.findViewById(R.id.clinics1)
+        leclinic1.setOnClickListener {
+            view.findNavController().navigate(R.id.action_searchClinicsFragment_to_searchClinic1Fragment)
+        }
+        val leclinic2: LinearLayout = view.findViewById(R.id.clinics2)
+        leclinic2.setOnClickListener {
+            view.findNavController().navigate(R.id.action_searchClinicsFragment_to_searchClinic2Fragment)
         }
     }
 
