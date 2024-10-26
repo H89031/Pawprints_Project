@@ -126,9 +126,8 @@
                                     android:orientation="horizontal">
 
                                     <TextView
-                                        android:text="Mary Ann"
                                         android:id="@+id/name1"
-                                        android:onClick="nameClick"
+                                        android:text="Mary Ann"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
                                         android:fontFamily="sans-serif-medium"
