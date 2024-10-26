@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".ui.report.ReportStrayFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@color/white">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:background="@drawable/transparent_background"
+                android:layout_height="25dp"
+                android:scaleType="centerCrop"
+                android:gravity="center_vertical"
+                android:adjustViewBounds="true"
+                android:layout_marginStart="20dp"
+                android:src="@drawable/ic_icon_back"/>
+
+            <TextView
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Report seen stray dog"
+                android:textColor="@color/text_black"
+                android:textSize="18sp">
+
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:background="@drawable/f_rounded_corner"
+                android:hint="Give Dog Name"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_grey"
+                android:textSize="15sp">
+
+            </EditText>
+
+            <ImageView
+                android:contentDescription="heart"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginStart="8dp"
+                android:background="@drawable/ic_icon_add_photo">
+            </ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:background="@drawable/f_rounded_corner"
+                android:hint="Breed (optional)"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_grey"
+                android:textSize="15sp">
+
+            </EditText>
+
+            <EditText
+                android:layout_width="170dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/f_rounded_corner"
+                android:hint="Sex"
+                android:inputType="text"
+                android:padding="15dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_grey"
+                android:textSize="15sp">
+
+            </EditText>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/f_rounded_corner"
+            android:hint="Description of the dog's appearance"
+            android:inputType="text"
+            android:padding="15dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey"
+            android:textSize="15sp">
+
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/f_rounded_corner"
+            android:hint="Last seen location"
+            android:inputType="text"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey"
+            android:textSize="15sp">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/f_rounded_corner"
+            android:hint="Last seen date"
+            android:inputType="date"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey"
+            android:textSize="15sp">
+        </EditText>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/f_rounded_corner"
+            android:hint="Extra Information"
+            android:inputType="text"
+            android:padding="15dp"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textColorHint="@color/light_grey"
+            android:textSize="15sp">
+
+        </EditText>
+
+        <Button
+            android:text="REPORT"
+            android:contentDescription="blahblah"
+            android:textSize="16sp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/white"
+            android:layout_width="175dp"
+            android:layout_height="50dp"
+            android:background="@drawable/rounded_blue">
+
+        </Button>
+
+    </LinearLayout>
+
+</FrameLayout>
