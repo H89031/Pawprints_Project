@@ -1,5 +1,6 @@
 package com.example.pawprints.ui.report
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -8,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import androidx.navigation.findNavController
+import com.example.pawprints.Chat
 import com.example.pawprints.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -46,7 +48,14 @@ class RStrayDogFragment : Fragment() {
         sdoge3.setOnClickListener {
             view.findNavController().navigate(R.id.action_RStrayDogFragment_to_reportStrayDog3Fragment)
         }
+        val intent = Intent(requireContext(), Chat::class.java)
+        val chatting: ImageButton = view.findViewById(R.id.chat)
+        chatting.setOnClickListener {
+            startActivity(intent)
+        }
+
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

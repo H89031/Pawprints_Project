@@ -16,6 +16,7 @@ import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import com.example.pawprints.Chat
 import com.example.pawprints.Navigation
 import com.example.pawprints.R
 import com.example.pawprints.Signup
@@ -53,6 +54,13 @@ class HomeFragment : Fragment() {
         nameText2.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_home_to_homeProfile2Fragment)
         }
+
+        val intent = Intent(requireContext(), Chat::class.java)
+        val chatting: ImageButton = view.findViewById(R.id.chat)
+        chatting.setOnClickListener {
+            startActivity(intent)
+        }
+
     }
 
     override fun onCreateView(

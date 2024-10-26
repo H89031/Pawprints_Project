@@ -1,5 +1,6 @@
 package com.example.pawprints.ui.report
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import com.example.pawprints.Chat
 import com.example.pawprints.R
 import com.example.pawprints.databinding.FragmentReportBinding
 
@@ -19,6 +21,12 @@ class ReportFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        val intent = Intent(requireContext(), Chat::class.java)
+        val chatting: ImageButton = view.findViewById(R.id.chat)
+        chatting.setOnClickListener {
+            startActivity(intent)
+        }
         val seemoreM: TextView = view.findViewById(R.id.seeMoreMissing)
         seemoreM.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_report_to_RMissingDogFragment)
