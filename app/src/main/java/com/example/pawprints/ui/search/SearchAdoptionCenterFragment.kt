@@ -1,5 +1,6 @@
 package com.example.pawprints.ui.search
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.navigation.findNavController
+import com.example.pawprints.Chat
 import com.example.pawprints.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -44,6 +46,11 @@ class SearchAdoptionCenterFragment : Fragment() {
         val lecenter2: LinearLayout = view.findViewById(R.id.centers2)
         lecenter2.setOnClickListener {
             view.findNavController().navigate(R.id.action_searchAdoptionCenterFragment_to_searchCenter2Fragment)
+        }
+        val intent = Intent(requireContext(), Chat::class.java)
+        val chatting: ImageButton = view.findViewById(R.id.chat)
+        chatting.setOnClickListener {
+            startActivity(intent)
         }
     }
 

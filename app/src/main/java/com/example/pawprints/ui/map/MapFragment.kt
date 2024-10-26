@@ -1,5 +1,6 @@
 package com.example.pawprints.ui.map
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -7,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageButton
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.pawprints.Chat
 import com.example.pawprints.R
 import com.example.pawprints.databinding.FragmentMapBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
@@ -21,6 +23,12 @@ class MapFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        val intent = Intent(requireContext(), Chat::class.java)
+        val chatting: ImageButton = view.findViewById(R.id.chat)
+        chatting.setOnClickListener {
+            startActivity(intent)
+        }
+
         val adoptids = listOf(R.id.adoption1, R.id.adoption2)
         adoptids.forEach { buttonId ->
             val button: ImageButton = view.findViewById(buttonId)

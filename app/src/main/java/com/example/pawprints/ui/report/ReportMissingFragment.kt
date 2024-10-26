@@ -1,5 +1,6 @@
 package com.example.pawprints.ui.report
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import androidx.navigation.findNavController
 import androidx.navigation.fragment.findNavController
+import com.example.pawprints.Chat
 import com.example.pawprints.R
 
 // TODO: Rename parameter arguments, choose names that match
@@ -33,6 +35,7 @@ class ReportMissingFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val back: ImageButton = view.findViewById(R.id.backButton)

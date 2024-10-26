@@ -1,5 +1,6 @@
 package com.example.pawprints.ui.search
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -9,6 +10,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
+import com.example.pawprints.Chat
 import com.example.pawprints.R
 import com.example.pawprints.databinding.FragmentSearchBinding
 
@@ -63,6 +65,11 @@ class SearchFragment : Fragment() {
         val lecenter2: ImageButton = view.findViewById(R.id.centers2)
         lecenter2.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_search_to_searchCenter2Fragment)
+        }
+        val intent = Intent(requireContext(), Chat::class.java)
+        val chatting: ImageButton = view.findViewById(R.id.chat)
+        chatting.setOnClickListener {
+            startActivity(intent)
         }
 
     }
