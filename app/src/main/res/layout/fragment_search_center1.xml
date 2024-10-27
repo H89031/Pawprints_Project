@@ -74,7 +74,7 @@
                     android:contentDescription="profilepic"
                     android:focusable="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_example_lang"
+                    android:src="@drawable/ad_pawssion_project"
                     app:layout_constraintBottom_toBottomOf="@+id/gradient"
                     app:layout_constraintEnd_toEndOf="@+id/gradient"
                     app:layout_constraintStart_toStartOf="@+id/gradient"
@@ -90,7 +90,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Dog Name"
+                android:text="Pawssion Project Adoption Center
+"
                 android:textColor="@color/text_black"
                 android:textSize="20sp">
 
@@ -174,7 +175,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:paddingBottom="100dp"
+                android:paddingBottom="150dp"
                 android:paddingTop="10dp"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
@@ -209,7 +210,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="Camarin, Caloocan City"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -255,7 +256,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="0917 123 4567"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -291,7 +292,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="---"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -337,7 +338,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="pawssionproject123@gmail.com"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -509,18 +510,11 @@
                             android:orientation="horizontal">
 
                             <ImageView
-                                android:layout_width="170dp"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/img_example_lang"
-                                android:layout_marginBottom="10dp"
-                                android:scaleType="centerCrop">
-                            </ImageView>
-
-                            <ImageView
-                                android:layout_marginStart="5dp"
-                                android:layout_width="170dp"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/img_example_lang"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:src="@drawable/ad_pawssion_project"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
                                 android:layout_marginBottom="10dp"
                                 android:scaleType="centerCrop">
                             </ImageView>

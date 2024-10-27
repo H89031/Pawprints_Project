@@ -1,7 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shape xmlns:android="http://schemas.android.com/apk/res/android"
-    android:shape="rectangle">
-    <corners android:topLeftRadius="35dp" android:topRightRadius="35dp"/>
-    <solid android:color="@color/white"/>
-    <stroke android:color="@color/light_grey" android:width="0.5dp"/>
-</shape>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!-- Outer Gradient Border -->
+<item>
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <corners android:topLeftRadius="35dp" android:topRightRadius="35dp"/>
+        <solid android:color="#00FFFFFF"/>
+        <stroke android:color="#00FFFFFF" android:width="0.5dp"/>
+    </shape>
+</item>
+
+<!-- Inner Image Placeholder -->
+<item android:top="20dp">
+    <shape xmlns:android="http://schemas.android.com/apk/res/android"
+        android:shape="rectangle">
+        <corners android:topLeftRadius="35dp" android:topRightRadius="35dp"/>
+        <solid android:color="@color/white"/>
+        <stroke android:color="@color/light_grey" android:width="0.5dp"/>
+    </shape>
+</item>
+
+</layer-list>

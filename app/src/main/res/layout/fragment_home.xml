@@ -102,7 +102,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 app:shapeAppearanceOverlay="@style/CircledImageView"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/user_maryann"
                                 android:clickable="true"
                                 android:focusable="true"
                                 android:scaleType="centerCrop"
@@ -212,7 +212,8 @@
                                 android:contentDescription="heart"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
-                                android:background="@drawable/ic_icon_heart"
+                                android:src="@drawable/ic_icon_heart"
+                                android:background="@drawable/transparent_background"
                                 android:layout_marginEnd="10dp"
                                 android:layout_marginBottom="10dp">
                             </ImageButton>
@@ -254,12 +255,12 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 app:shapeAppearanceOverlay="@style/CircledImageView"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/user_pawprint"
                                 android:clickable="true"
                                 android:focusable="true"
                                 android:scaleType="centerCrop"
                                 android:adjustViewBounds="true"
-                                android:background="@drawable/f_circle_profile"
+                                android:background="@mipmap/ic_launcher"
                                 android:layout_marginTop="17dp"
                                 android:layout_marginStart="20dp"
                                 android:layout_marginEnd="17dp">
@@ -418,7 +419,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 app:shapeAppearanceOverlay="@style/CircledImageView"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/user_emmanuel"
                                 android:clickable="true"
                                 android:focusable="true"
                                 android:scaleType="centerCrop"
@@ -544,7 +545,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="100dp"
+                    android:layout_marginBottom="150dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/top">
@@ -568,7 +569,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 app:shapeAppearanceOverlay="@style/CircledImageView"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/user_marktahimik"
                                 android:clickable="true"
                                 android:focusable="true"
                                 android:scaleType="centerCrop"
@@ -642,7 +643,7 @@
                         </LinearLayout>
 
                         <TextView
-                            android:text="Woof Woof!"
+                            android:text="My dog: Woof Woof!"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="5dp"
@@ -661,7 +662,7 @@
                             android:paddingTop="5dp">
 
                             <TextView
-                                android:text="Empty"
+                                android:text="Me: Shhhh wag maingay"
                                 android:layout_width="250dp"
                                 android:layout_height="wrap_content"
                                 android:layout_marginStart="25dp"

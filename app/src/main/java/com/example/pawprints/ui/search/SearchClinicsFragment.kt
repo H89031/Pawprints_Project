@@ -7,7 +7,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.LinearLayout
 import androidx.navigation.findNavController
 import com.example.pawprints.Chat
@@ -35,7 +34,6 @@ class SearchClinicsFragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         ///////////////
@@ -53,7 +51,6 @@ class SearchClinicsFragment : Fragment() {
             startActivity(intent)
         }
     }
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

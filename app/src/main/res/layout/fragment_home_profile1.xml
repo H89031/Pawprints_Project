@@ -74,7 +74,7 @@
                     android:contentDescription="profilepic"
                     android:focusable="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_example_lang"
+                    android:src="@drawable/user_maryann"
                     app:layout_constraintBottom_toBottomOf="@+id/gradient"
                     app:layout_constraintEnd_toEndOf="@+id/gradient"
                     app:layout_constraintStart_toStartOf="@+id/gradient"
@@ -230,21 +230,6 @@
                     android:background="@drawable/f_rounded_purple"
                     android:contentDescription="logout duh"
                     android:fontFamily="sans-serif-black"
-                    android:text="Call"
-                    android:textColor="@color/white"
-                    android:textSize="12sp">
-
-                </TextView>
-
-                <TextView
-                    android:gravity="center"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:background="@drawable/f_rounded_purple"
-                    android:contentDescription="logout duh"
-                    android:fontFamily="sans-serif-black"
                     android:text="Follow"
                     android:textColor="@color/white"
                     android:textSize="12sp">
@@ -298,7 +283,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 app:shapeAppearanceOverlay="@style/CircledImageView"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/user_maryann"
                                 android:clickable="true"
                                 android:focusable="true"
                                 android:scaleType="centerCrop"
@@ -425,7 +410,7 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="150dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/top">
@@ -449,7 +434,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 app:shapeAppearanceOverlay="@style/CircledImageView"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/user_maryann"
                                 android:clickable="true"
                                 android:focusable="true"
                                 android:scaleType="centerCrop"
@@ -530,7 +515,7 @@
                             android:layout_marginStart="25dp"
                             android:layout_marginEnd="30dp"
                             android:layout_marginBottom="5dp"
-                            android:src="@drawable/img_example_lang"
+                            android:src="@drawable/dog_saku"
                             android:scaleType="centerCrop"
                             android:adjustViewBounds="true">
 

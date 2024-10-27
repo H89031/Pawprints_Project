@@ -96,8 +96,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp">
                         <Button
-                            android:text=" REPORT MISSING DOG"
                             android:id="@+id/reportMDog"
+                            android:text=" REPORT MISSING DOG"
                             android:textColor="@color/white"
                             android:fontFamily="sans-serif-black"
                             android:background="@color/dark_purple"
@@ -114,8 +114,8 @@
                         android:layout_height="match_parent"
                         android:layout_margin="5dp">
                         <Button
-                            android:text=" REPORT STRAY DOG"
                             android:id="@+id/reportSDog"
+                            android:text=" REPORT STRAY DOG"
                             android:textColor="@color/white"
                             android:fontFamily="sans-serif-black"
                             android:background="@color/dark_purple"
@@ -154,10 +154,10 @@
                             android:textColor="@color/text_black" />
 
                         <TextView
+                            android:id="@+id/seeMoreMissing"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:clickable="true"
-                            android:id="@+id/seeMoreMissing"
                             android:fontFamily="sans-serif-medium"
                             android:gravity="bottom|right"
                             android:paddingEnd="15dp"
@@ -189,7 +189,7 @@
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/miss_princess"
                                 android:contentDescription="dog"
                                 android:clickable="true"/>
 
@@ -205,7 +205,7 @@
                                 android:clickable="true"
                                 android:contentDescription="dog"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang" />
+                                android:src="@drawable/miss_alby" />
 
                             <ImageButton
                                 android:id="@+id/mDog3"
@@ -217,7 +217,7 @@
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/miss_proxy"
                                 android:contentDescription="dog"
                                 android:clickable="true"/>
 
@@ -230,7 +230,7 @@
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/miss_sam"
                                 android:contentDescription="dog"
                                 android:clickable="true"/>
 
@@ -244,7 +244,7 @@
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/miss_margotta"
                                 android:contentDescription="dog"
                                 android:clickable="true"/>
 
@@ -259,7 +259,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="210dp"
                     android:layout_marginTop="10dp"
-                    android:layout_marginBottom="50dp"
+                    android:layout_marginBottom="150dp"
                     android:background="@color/white"
                     android:orientation="vertical"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -282,10 +282,11 @@
                             android:textColor="@color/text_black" />
 
                         <TextView
+                            android:id="@+id/seeMoreStray"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:clickable="true"
-                            android:id="@+id/seeMoreStray"                            android:fontFamily="sans-serif-medium"
+                            android:fontFamily="sans-serif-medium"
                             android:gravity="bottom|right"
                             android:paddingEnd="15dp"
                             android:text="See more >"
@@ -316,7 +317,7 @@
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/str_bogart"
                                 android:contentDescription="dog"
                                 android:clickable="true"/>
 
@@ -330,7 +331,7 @@
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/str_chichi"
                                 android:contentDescription="dog"
                                 android:clickable="true"/>
 
@@ -344,7 +345,7 @@
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/str_charlie"
                                 android:contentDescription="dog"
                                 android:clickable="true"/>
 
@@ -357,7 +358,7 @@
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/str_browny"
                                 android:contentDescription="dog"
                                 android:clickable="true"/>
 
@@ -371,7 +372,7 @@
                                 android:adjustViewBounds="true"
                                 android:background="@drawable/f_rounded_corner"
                                 android:scaleType="centerCrop"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/str_trixie"
                                 android:contentDescription="dog"
                                 android:clickable="true"/>
 

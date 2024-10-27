@@ -32,6 +32,7 @@ class ReportStrayDog3Fragment : Fragment() {
             param2 = it.getString(ARG_PARAM2)
         }
     }
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val intent = Intent(requireContext(), Chat::class.java)
@@ -40,7 +41,6 @@ class ReportStrayDog3Fragment : Fragment() {
             startActivity(intent)
         }
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

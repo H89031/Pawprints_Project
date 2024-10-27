@@ -74,7 +74,7 @@
                     android:contentDescription="profilepic"
                     android:focusable="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_example_lang"
+                    android:src="@drawable/miss_alby"
                     app:layout_constraintBottom_toBottomOf="@+id/gradient"
                     app:layout_constraintEnd_toEndOf="@+id/gradient"
                     app:layout_constraintStart_toStartOf="@+id/gradient"
@@ -90,22 +90,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:fontFamily="sans-serif-black"
-                android:text="Dog Name"
+                android:text="Alby"
                 android:textColor="@color/text_black"
                 android:textSize="20sp">
-
-            </TextView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="20dp"
-                android:fontFamily="sans-serif-medium"
-                android:gravity="center"
-                android:text="Near {Address}"
-                android:textColor="@color/text_black"
-                android:textSize="13sp">
 
             </TextView>
 
@@ -127,7 +114,7 @@
                     android:background="@drawable/f_rounded_purple"
                     android:contentDescription="logout duh"
                     android:fontFamily="sans-serif-black"
-                    android:text="Contact Adoption Center"
+                    android:text="Contact Owner"
                     android:textColor="@color/white"
                     android:textSize="12sp">
 
@@ -145,7 +132,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
-                android:paddingBottom="100dp"
+                android:paddingBottom="150dp"
                 android:paddingTop="10dp"
                 android:gravity="center_horizontal"
                 android:orientation="vertical">
@@ -250,7 +237,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="Alby"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -286,7 +273,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="3 years old"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -332,7 +319,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="Male"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -368,7 +355,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="Pomeranian"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -414,7 +401,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="Brown"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -460,7 +447,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="SM Fairview"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -496,7 +483,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Details"
+                            android:text="June 5, 2024"
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -542,11 +529,7 @@
                         </TextView>
 
                         <TextView
-                            android:text="Example lang pero    Sakuragi was found on the streets of Camarin,
-   Caloocan City. Rescued by one of our members,
-   John Jerald Cruz in September 2023 and was
-   brought to ANS Animal Clinic and nursed back
-   to health."
+                            android:text="Likes to hide in small spaces. Barks a lot."
                             android:textColor="@color/mid_grey"
                             android:fontFamily="sans-serif-medium"
                             android:layout_marginStart="15dp"
@@ -601,18 +584,11 @@
                             android:orientation="horizontal">
 
                             <ImageView
-                                android:layout_width="170dp"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/img_example_lang"
-                                android:layout_marginBottom="10dp"
-                                android:scaleType="centerCrop">
-                            </ImageView>
-
-                            <ImageView
-                                android:layout_marginStart="5dp"
-                                android:layout_width="170dp"
-                                android:layout_height="wrap_content"
-                                android:src="@drawable/img_example_lang"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="15dp"
+                                android:src="@drawable/miss_alby"
                                 android:layout_marginBottom="10dp"
                                 android:scaleType="centerCrop">
                             </ImageView>

@@ -133,7 +133,7 @@
                         android:layout_margin="15dp"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/img_example_lang"
+                        android:src="@drawable/ac_regalado"
                         android:scaleType="centerCrop">
                     </ImageView>
 
@@ -150,7 +150,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-black"
-                        android:text="Clinic Name"
+                        android:text="Regalado Veterinary Clinic"
                         android:textColor="@color/text_black"
                         android:textSize="18sp">
                     </TextView>
@@ -266,7 +266,7 @@
 
 
                     <TextView
-                        android:text="ADDRESS... If it weren’t for this app, I wouldn’t have known where to go..."
+                        android:text="Regalado Avenue, Fairview, Q.C"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:textColor="@color/text_black"
@@ -303,7 +303,7 @@
                         android:layout_margin="15dp"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/img_example_lang"
+                        android:src="@drawable/ac_animal_wonders"
                         android:scaleType="centerCrop">
                     </ImageView>
 
@@ -320,7 +320,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-black"
-                        android:text="Clinic Name"
+                        android:text="Animal Wonders Clinic"
                         android:textColor="@color/text_black"
                         android:textSize="18sp">
                     </TextView>
@@ -375,45 +375,6 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="sans-serif-medium"
-                                android:text="Grooming"
-                                android:textColor="@color/white"
-                                android:textSize="12sp">
-                            </TextView>
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:background="@drawable/transparent_background"
-                                android:layout_height="15dp"
-                                android:scaleType="centerCrop"
-                                android:gravity="center_vertical"
-                                android:adjustViewBounds="true"
-                                android:layout_marginStart="2dp"
-                                android:src="@drawable/ic_icon_check"/>
-
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="2dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/f_rounded_blue"
-                            android:layout_marginEnd="5dp"
-                            android:paddingStart="10dp"
-                            android:paddingEnd="10dp"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-medium"
                                 android:text="Castration &amp; Spaying"
                                 android:textColor="@color/white"
                                 android:textSize="12sp">
@@ -436,7 +397,7 @@
 
 
                     <TextView
-                        android:text="ADDRESS... If it weren’t for this app, I wouldn’t have known where to go..."
+                        android:text="Gateway Mall, Cubao, Q.C"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:textColor="@color/text_black"
@@ -472,7 +433,7 @@
                         android:layout_margin="15dp"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/img_example_lang"
+                        android:src="@drawable/ac_gusi"
                         android:scaleType="centerCrop">
                     </ImageView>
 
@@ -489,7 +450,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-black"
-                        android:text="Clinic Name"
+                        android:text="Gusi Animal Clinic"
                         android:textColor="@color/text_black"
                         android:textSize="18sp">
                     </TextView>
@@ -564,48 +525,9 @@
 
                     </LinearLayout>
 
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:layout_marginTop="2dp"
-                        android:orientation="horizontal">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/f_rounded_blue"
-                            android:layout_marginEnd="5dp"
-                            android:paddingStart="10dp"
-                            android:paddingEnd="10dp"
-                            android:gravity="center">
-
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:fontFamily="sans-serif-medium"
-                                android:text="Castration &amp; Spaying"
-                                android:textColor="@color/white"
-                                android:textSize="12sp">
-                            </TextView>
-
-                            <ImageView
-                                android:layout_width="wrap_content"
-                                android:background="@drawable/transparent_background"
-                                android:layout_height="15dp"
-                                android:scaleType="centerCrop"
-                                android:gravity="center_vertical"
-                                android:adjustViewBounds="true"
-                                android:layout_marginStart="2dp"
-                                android:src="@drawable/ic_icon_check"/>
-
-
-                        </LinearLayout>
-
-                    </LinearLayout>
-
 
                     <TextView
-                        android:text="ADDRESS... If it weren’t for this app, I wouldn’t have known where to go..."
+                        android:text="Quiapo, Manila City"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:textColor="@color/text_black"
@@ -626,7 +548,7 @@
                 android:background="@color/white"
                 android:orientation="horizontal"
                 android:layout_marginTop="5dp"
-                android:layout_marginBottom="15dp"
+                android:layout_marginBottom="150dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/top">
@@ -641,7 +563,7 @@
                         android:layout_margin="15dp"
                         android:layout_width="120dp"
                         android:layout_height="120dp"
-                        android:src="@drawable/img_example_lang"
+                        android:src="@drawable/ac_barks_n_meow"
                         android:scaleType="centerCrop">
                     </ImageView>
 
@@ -658,7 +580,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-black"
-                        android:text="Clinic Name"
+                        android:text="Barks 'N Meows Veterinary Clinic"
                         android:textColor="@color/text_black"
                         android:textSize="18sp">
                     </TextView>
@@ -774,7 +696,7 @@
 
 
                     <TextView
-                        android:text="ADDRESS... If it weren’t for this app, I wouldn’t have known where to go..."
+                        android:text="Barks 'N Meows Veterinary Clinic"
                         android:layout_width="match_parent"
                         android:layout_height="35dp"
                         android:textColor="@color/text_black"

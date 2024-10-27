@@ -22,6 +22,7 @@
             android:background="@color/white">
 
             <ImageButton
+                android:id="@+id/backButton"
                 android:layout_width="wrap_content"
                 android:background="@drawable/transparent_background"
                 android:layout_height="25dp"
@@ -29,7 +30,6 @@
                 android:gravity="center_vertical"
                 android:adjustViewBounds="true"
                 android:layout_marginStart="20dp"
-                android:id="@+id/backButton"
                 android:src="@drawable/ic_icon_back"/>
 
             <TextView

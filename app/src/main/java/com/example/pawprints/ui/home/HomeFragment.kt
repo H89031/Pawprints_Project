@@ -37,7 +37,6 @@ class HomeFragment : Fragment() {
         posts.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_home_to_homeAddPostFragment)
         }
-
         val Images: ImageView = view.findViewById(R.id.person1)
         Images.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_home_to_homeProfile1Fragment)
@@ -54,13 +53,11 @@ class HomeFragment : Fragment() {
         nameText2.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_home_to_homeProfile2Fragment)
         }
-
         val intent = Intent(requireContext(), Chat::class.java)
         val chatting: ImageButton = view.findViewById(R.id.chat)
         chatting.setOnClickListener {
             startActivity(intent)
         }
-
     }
 
     override fun onCreateView(

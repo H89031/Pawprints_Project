@@ -28,7 +28,6 @@ class MapFragment : Fragment() {
         chatting.setOnClickListener {
             startActivity(intent)
         }
-
         val adoptids = listOf(R.id.adoption1, R.id.adoption2)
         adoptids.forEach { buttonId ->
             val button: ImageButton = view.findViewById(buttonId)

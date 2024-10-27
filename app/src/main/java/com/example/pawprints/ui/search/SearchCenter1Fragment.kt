@@ -40,6 +40,7 @@ class SearchCenter1Fragment : Fragment() {
             startActivity(intent)
         }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
