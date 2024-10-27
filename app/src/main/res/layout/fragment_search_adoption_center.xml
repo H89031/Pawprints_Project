@@ -133,7 +133,7 @@
                             android:layout_margin="15dp"
                             android:layout_width="120dp"
                             android:layout_height="120dp"
-                            android:src="@drawable/img_example_lang"
+                            android:src="@drawable/ad_pawssion_project"
                             android:scaleType="centerCrop">
                         </ImageView>
 
@@ -150,107 +150,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-black"
-                            android:text="Center Name"
-                            android:textColor="@color/text_black"
-                            android:textSize="18sp">
-                        </TextView>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="20dp"
-                            android:layout_marginTop="8dp"
-                            android:orientation="horizontal">
-
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="match_parent"
-                                android:background="@drawable/f_rounded_blue"
-                                android:layout_marginEnd="5dp"
-                                android:paddingStart="10dp"
-                                android:paddingEnd="10dp"
-                                android:gravity="center">
-
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="sans-serif-medium"
-                                    android:text="4.5"
-                                    android:textColor="@color/white"
-                                    android:textSize="12sp">
-                                </TextView>
-
-                                <ImageView
-                                    android:layout_width="wrap_content"
-                                    android:background="@drawable/transparent_background"
-                                    android:layout_height="15dp"
-                                    android:scaleType="centerCrop"
-                                    android:gravity="center_vertical"
-                                    android:adjustViewBounds="true"
-                                    android:layout_marginStart="2dp"
-                                    android:src="@drawable/ic_icon_star_white"/>
-
-
-                            </LinearLayout>
-
-                        </LinearLayout>
-
-
-                        <TextView
-                            android:text="ADDRESS... If it weren’t for this app, I wouldn’t have known where to go..."
-                            android:layout_width="match_parent"
-                            android:layout_height="35dp"
-                            android:textColor="@color/text_black"
-                            android:textSize="13sp"
-                            android:fontFamily="sans-serif"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginBottom="5dp">
-
-                        </TextView>
-
-                    </LinearLayout>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:id="@id/centers2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/white"
-                    android:orientation="horizontal"
-                    android:layout_marginTop="5dp"
-                    android:layout_marginBottom="15dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/top">
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_margin="15dp"
-                            android:layout_width="120dp"
-                            android:layout_height="120dp"
-                            android:src="@drawable/img_example_lang"
-                            android:scaleType="centerCrop">
-                        </ImageView>
-
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="15dp"
-                        android:layout_marginEnd="15dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:fontFamily="sans-serif-black"
-                            android:text="Center Name"
+                            android:text="Pawssion Project Adoption Center"
                             android:textColor="@color/text_black"
                             android:textSize="18sp">
                         </TextView>
@@ -296,7 +196,107 @@
 
 
                         <TextView
-                            android:text="ADDRESS... If it weren’t for this app, I wouldn’t have known where to go..."
+                            android:text="Camarin, Caloocan City"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:textColor="@color/text_black"
+                            android:textSize="13sp"
+                            android:fontFamily="sans-serif"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="5dp">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/centers2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top">
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_margin="15dp"
+                            android:layout_width="120dp"
+                            android:layout_height="120dp"
+                            android:src="@drawable/ad_hound_haven"
+                            android:scaleType="centerCrop">
+                        </ImageView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginEnd="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-black"
+                            android:text="Hound Haven Center"
+                            android:textColor="@color/text_black"
+                            android:textSize="18sp">
+                        </TextView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="20dp"
+                            android:layout_marginTop="8dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/f_rounded_blue"
+                                android:layout_marginEnd="5dp"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="10dp"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="sans-serif-medium"
+                                    android:text="5.0"
+                                    android:textColor="@color/white"
+                                    android:textSize="12sp">
+                                </TextView>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:background="@drawable/transparent_background"
+                                    android:layout_height="15dp"
+                                    android:scaleType="centerCrop"
+                                    android:gravity="center_vertical"
+                                    android:adjustViewBounds="true"
+                                    android:layout_marginStart="2dp"
+                                    android:src="@drawable/ic_icon_star_white"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+
+                        <TextView
+                            android:text="Novaliches, Quezon City"
                             android:layout_width="match_parent"
                             android:layout_height="35dp"
                             android:textColor="@color/text_black"
@@ -332,7 +332,7 @@
                             android:layout_margin="15dp"
                             android:layout_width="120dp"
                             android:layout_height="120dp"
-                            android:src="@drawable/img_example_lang"
+                            android:src="@drawable/ad_qc_adoption_center"
                             android:scaleType="centerCrop">
                         </ImageView>
 
@@ -349,7 +349,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-black"
-                            android:text="Center Name"
+                            android:text="Q.C Animal Care and Adoption Center"
                             android:textColor="@color/text_black"
                             android:textSize="18sp">
                         </TextView>
@@ -373,7 +373,7 @@
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fontFamily="sans-serif-medium"
-                                    android:text="4.7"
+                                    android:text="3.9"
                                     android:textColor="@color/white"
                                     android:textSize="12sp">
                                 </TextView>
@@ -395,7 +395,7 @@
 
 
                         <TextView
-                            android:text="ADDRESS... If it weren’t for this app, I wouldn’t have known where to go..."
+                            android:text="Quezon City"
                             android:layout_width="match_parent"
                             android:layout_height="35dp"
                             android:textColor="@color/text_black"
@@ -416,7 +416,7 @@
                     android:background="@color/white"
                     android:orientation="horizontal"
                     android:layout_marginTop="5dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="150dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/top">
@@ -431,7 +431,7 @@
                             android:layout_margin="15dp"
                             android:layout_width="120dp"
                             android:layout_height="120dp"
-                            android:src="@drawable/img_example_lang"
+                            android:src="@drawable/ad_happy_paws"
                             android:scaleType="centerCrop">
                         </ImageView>
 
@@ -448,7 +448,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-black"
-                            android:text="Center Name"
+                            android:text="Happy Paws Adoption Center"
                             android:textColor="@color/text_black"
                             android:textSize="18sp">
                         </TextView>
@@ -480,7 +480,7 @@
                                 <ImageView
                                     android:layout_width="wrap_content"
                                     android:background="@drawable/transparent_background"
-                                    android:layout_height="15dp"
+                                    android:layout_height="5.0dp"
                                     android:scaleType="centerCrop"
                                     android:gravity="center_vertical"
                                     android:adjustViewBounds="true"
@@ -494,7 +494,7 @@
 
 
                         <TextView
-                            android:text="ADDRESS... If it weren’t for this app, I wouldn’t have known where to go..."
+                            android:text="Valenzuela City"
                             android:layout_width="match_parent"
                             android:layout_height="35dp"
                             android:textColor="@color/text_black"

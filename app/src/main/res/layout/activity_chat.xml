@@ -8,6 +8,7 @@
     android:background="@color/background"
     android:orientation="vertical"
     tools:context=".Chat">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -136,7 +137,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         app:shapeAppearanceOverlay="@style/CircledImageView"
-                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:src="@drawable/chat_maria" android:focusable="true"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginStart="20dp"
@@ -179,7 +180,7 @@
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:gravity="center_vertical"
-                        android:src="@drawable/ic_nav_color_circle"/>
+                        android:src="@drawable/ic_color_circle"/>
 
                 </LinearLayout>
 
@@ -196,7 +197,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         app:shapeAppearanceOverlay="@style/CircledImageView"
-                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:src="@drawable/chat_vaac" android:focusable="true"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginStart="20dp"
@@ -256,7 +257,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         app:shapeAppearanceOverlay="@style/CircledImageView"
-                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:src="@drawable/chat_owners" android:focusable="true"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginStart="20dp"
@@ -316,7 +317,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         app:shapeAppearanceOverlay="@style/CircledImageView"
-                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:src="@drawable/chat_jopay" android:focusable="true"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginStart="20dp"
@@ -378,7 +379,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         app:shapeAppearanceOverlay="@style/CircledImageView"
-                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:src="@drawable/chat_health" android:focusable="true"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginStart="20dp"
@@ -421,7 +422,7 @@
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:gravity="center_vertical"
-                        android:src="@drawable/ic_nav_color_circle"/>
+                        android:src="@drawable/ic_color_circle"/>
 
                 </LinearLayout>
 
@@ -438,7 +439,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         app:shapeAppearanceOverlay="@style/CircledImageView"
-                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:src="@drawable/chat_project" android:focusable="true"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginStart="20dp"
@@ -498,7 +499,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         app:shapeAppearanceOverlay="@style/CircledImageView"
-                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:src="@drawable/chat_jose" android:focusable="true"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginStart="20dp"
@@ -560,7 +561,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         app:shapeAppearanceOverlay="@style/CircledImageView"
-                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:src="@drawable/chat_juan" android:focusable="true"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginStart="20dp"
@@ -612,7 +613,7 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="90dp"
-                    android:layout_marginBottom="15dp"
+                    android:layout_marginBottom="150dp"
                     android:orientation="horizontal"
                     android:clickable="false"
                     android:gravity="center_vertical"
@@ -622,7 +623,7 @@
                         android:layout_width="60dp"
                         android:layout_height="60dp"
                         app:shapeAppearanceOverlay="@style/CircledImageView"
-                        android:src="@drawable/img_example_lang" android:focusable="true"
+                        android:src="@drawable/chat_andres" android:focusable="true"
                         android:scaleType="centerCrop"
                         android:adjustViewBounds="true"
                         android:layout_marginStart="20dp"

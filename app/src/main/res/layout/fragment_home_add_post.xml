@@ -61,7 +61,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 app:shapeAppearanceOverlay="@style/CircledImageView"
-                android:src="@drawable/img_example_lang"
+                android:src="@drawable/user"
                 android:clickable="true"
                 android:focusable="true"
                 android:scaleType="centerCrop"

@@ -22,6 +22,7 @@
             android:background="@color/white">
 
             <ImageButton
+                android:id="@id/backButton"
                 android:layout_width="wrap_content"
                 android:background="@drawable/transparent_background"
                 android:layout_height="25dp"
@@ -29,7 +30,6 @@
                 android:gravity="center_vertical"
                 android:adjustViewBounds="true"
                 android:layout_marginStart="20dp"
-                android:id="@id/backButton"
                 android:src="@drawable/ic_icon_back"/>
 
             <TextView
@@ -91,7 +91,7 @@
                 android:layout_width="170dp"
                 android:layout_height="48dp"
                 android:background="@drawable/f_rounded_corner"
-                android:hint="Breed (optional)"
+                android:hint="Breed"
                 android:inputType="text"
                 android:padding="15dp"
                 android:textColor="@color/black"
@@ -184,7 +184,7 @@
             android:text="REPORT"
             android:contentDescription="blahblah"
             android:textSize="16sp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="15dp"
             android:fontFamily="sans-serif-black"
             android:textColor="@color/white"
             android:layout_width="175dp"

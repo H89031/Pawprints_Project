@@ -40,6 +40,7 @@ class SearchDog2Fragment : Fragment() {
             startActivity(intent)
         }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?

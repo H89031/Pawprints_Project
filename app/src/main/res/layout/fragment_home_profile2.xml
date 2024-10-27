@@ -74,7 +74,7 @@
                     android:contentDescription="profilepic"
                     android:focusable="true"
                     android:scaleType="centerCrop"
-                    android:src="@drawable/img_example_lang"
+                    android:src="@drawable/user_emmanuel"
                     app:layout_constraintBottom_toBottomOf="@+id/gradient"
                     app:layout_constraintEnd_toEndOf="@+id/gradient"
                     app:layout_constraintStart_toStartOf="@+id/gradient"
@@ -230,21 +230,6 @@
                     android:background="@drawable/f_rounded_purple"
                     android:contentDescription="logout duh"
                     android:fontFamily="sans-serif-black"
-                    android:text="Call"
-                    android:textColor="@color/white"
-                    android:textSize="12sp">
-
-                </TextView>
-
-                <TextView
-                    android:gravity="center"
-                    android:layout_width="100dp"
-                    android:layout_height="30dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginEnd="5dp"
-                    android:background="@drawable/f_rounded_purple"
-                    android:contentDescription="logout duh"
-                    android:fontFamily="sans-serif-black"
                     android:text="Follow"
                     android:textColor="@color/white"
                     android:textSize="12sp">
@@ -298,7 +283,7 @@
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
                                 app:shapeAppearanceOverlay="@style/CircledImageView"
-                                android:src="@drawable/img_example_lang"
+                                android:src="@drawable/user_emmanuel"
                                 android:clickable="true"
                                 android:focusable="true"
                                 android:scaleType="centerCrop"
@@ -420,7 +405,160 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="150dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/top">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginEnd="25dp"
+                        android:orientation="vertical"
+                        android:background="@drawable/f_rounded_corner"
+                        app:layout_constraintTop_toBottomOf="@+id/top"
+                        android:gravity="right">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="65dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.imageview.ShapeableImageView
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                app:shapeAppearanceOverlay="@style/CircledImageView"
+                                android:src="@drawable/user_emmanuel"
+                                android:clickable="true"
+                                android:focusable="true"
+                                android:scaleType="centerCrop"
+                                android:adjustViewBounds="true"
+                                android:background="@drawable/f_circle_profile"
+                                android:layout_marginTop="17dp"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginEnd="17dp">
+
+                            </com.google.android.material.imageview.ShapeableImageView>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical">
+
+                                <LinearLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_marginTop="22dp"
+                                    android:orientation="horizontal">
+
+                                    <TextView
+                                        android:text="Emmanuel John"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif-medium"
+                                        android:textColor="@color/text_black"
+                                        android:clickable="true"
+                                        android:focusable="true">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="•"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:layout_marginStart="8dp"
+                                        android:layout_marginEnd="8dp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                    <TextView
+                                        android:text="follow"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="match_parent"
+                                        android:fontFamily="sans-serif"
+                                        android:clickable="true"
+                                        android:focusable="true"
+                                        android:textSize="13sp"
+                                        android:textColor="@color/text_black">
+
+                                    </TextView>
+
+                                </LinearLayout>
+
+                                <TextView
+                                    android:text="1 day ago"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent"
+                                    android:fontFamily="sans-serif"
+                                    android:textSize="11sp"
+                                    android:textColor="@color/dark_grey">
+
+                                </TextView>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <ImageView
+                            android:contentDescription="blahblah"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="25dp"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="5dp"
+                            android:src="@drawable/dog_sakuragi"
+                            android:scaleType="centerCrop"
+                            android:adjustViewBounds="true">
+
+                        </ImageView>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:gravity="bottom">
+
+                            <TextView
+                                android:text="Just visited my girlfriend, Mary Ann and her dog, saku!"
+                                android:layout_width="250dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="25dp"
+                                android:layout_marginEnd="30dp"
+                                android:textColor="@color/text_black"
+                                android:fontFamily="sans-serif"
+                                android:layout_marginBottom="15dp">
+
+                            </TextView>
+
+                            <ImageButton
+                                android:contentDescription="heart"
+                                android:layout_width="45dp"
+                                android:layout_height="45dp"
+                                android:background="@drawable/ic_icon_heart"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginBottom="10dp">
+                            </ImageButton>
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </LinearLayout>
+
+
 
         </ScrollView>
 

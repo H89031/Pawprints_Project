@@ -18,19 +18,11 @@ class ReportFragment : Fragment() {
 
     private var _binding: FragmentReportBinding? = null
     private val binding get() = _binding!!
-
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        val intent = Intent(requireContext(), Chat::class.java)
-        val chatting: ImageButton = view.findViewById(R.id.chat)
-        chatting.setOnClickListener {
-            startActivity(intent)
-        }
         val seemoreM: TextView = view.findViewById(R.id.seeMoreMissing)
         seemoreM.setOnClickListener {
-            view.findNavController().navigate(R.id.action_navigation_report_to_RMissingDogFragment)
-        }
+            view.findNavController().navigate(R.id.action_navigation_report_to_RMissingDogFragment)        }
         val seemoreS: TextView = view.findViewById(R.id.seeMoreStray)
         seemoreS.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_report_to_RStrayDogFragment)
@@ -43,7 +35,6 @@ class ReportFragment : Fragment() {
         repSDog.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_report_to_reportStrayFragment)
         }
-
         ///////////////
         val mdoge1: ImageButton = view.findViewById(R.id.mDog1)
         mdoge1.setOnClickListener {
@@ -70,7 +61,11 @@ class ReportFragment : Fragment() {
         sdoge3.setOnClickListener {
             view.findNavController().navigate(R.id.action_navigation_report_to_reportStrayDog3Fragment)
         }
-
+        val intent = Intent(requireContext(), Chat::class.java)
+        val chatting: ImageButton = view.findViewById(R.id.chat)
+        chatting.setOnClickListener {
+            startActivity(intent)
+        }
 
     }
     override fun onCreateView(
@@ -95,5 +90,4 @@ class ReportFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
 }

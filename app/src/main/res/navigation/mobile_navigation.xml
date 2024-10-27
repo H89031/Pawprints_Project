@@ -265,6 +265,4 @@
         android:name="com.example.pawprints.ui.search.SearchCenter2Fragment"
         android:label="fragment_search_center2"
         tools:layout="@layout/fragment_search_center2" />
-
-
 </navigation>

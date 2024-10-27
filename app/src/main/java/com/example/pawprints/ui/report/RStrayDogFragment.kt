@@ -53,9 +53,7 @@ class RStrayDogFragment : Fragment() {
         chatting.setOnClickListener {
             startActivity(intent)
         }
-
     }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
