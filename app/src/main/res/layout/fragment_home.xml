@@ -209,6 +209,7 @@
                             </TextView>
 
                             <ImageButton
+                                android:id="@+id/post1like"
                                 android:contentDescription="heart"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
@@ -374,6 +375,7 @@
                             </TextView>
 
                             <ImageButton
+                                android:id="@+id/post2like"
                                 android:contentDescription="heart"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
@@ -525,6 +527,7 @@
                             </TextView>
 
                             <ImageButton
+                                android:id="@+id/post3like"
                                 android:contentDescription="heart"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
@@ -674,6 +677,7 @@
                             </TextView>
 
                             <ImageButton
+                                android:id="@+id/post4like"
                                 android:contentDescription="heart"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
