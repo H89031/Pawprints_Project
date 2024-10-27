@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-
+    private val liked = mutableMapOf<Int, Boolean>()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val posts: ImageButton = view.findViewById(R.id.addpost)
@@ -57,6 +57,57 @@ class HomeFragment : Fragment() {
         val chatting: ImageButton = view.findViewById(R.id.chat)
         chatting.setOnClickListener {
             startActivity(intent)
+        }
+        val like1: ImageButton = view.findViewById(R.id.post1like)
+        val like2: ImageButton = view.findViewById(R.id.post2like)
+        val like3: ImageButton = view.findViewById(R.id.post3like)
+        val like4: ImageButton = view.findViewById(R.id.post4like)
+
+        liked[R.id.post1like] = false
+        liked[R.id.post2like] = false
+        liked[R.id.post3like] = false
+        liked[R.id.post4like] = false
+
+
+        like1.setOnClickListener {
+            if( liked[R.id.post1like]== false){
+                like1.setImageResource(R.drawable.ic_icon_heart_clicked)
+                liked[R.id.post1like] = true
+        }
+            else{
+                like1.setImageResource(R.drawable.ic_icon_heart)
+                liked[R.id.post1like] = false
+            }
+        }
+        like2.setOnClickListener {
+            if( liked[R.id.post2like]== false){
+                like2.setImageResource(R.drawable.ic_icon_heart_clicked)
+                liked[R.id.post2like] = true
+            }
+            else{
+                like2.setImageResource(R.drawable.ic_icon_heart)
+                liked[R.id.post2like] = false
+            }
+        }
+        like3.setOnClickListener {
+            if( liked[R.id.post3like]== false){
+                like3.setImageResource(R.drawable.ic_icon_heart_clicked)
+                liked[R.id.post3like] = true
+            }
+            else{
+                like3.setImageResource(R.drawable.ic_icon_heart)
+                liked[R.id.post3like] = false
+            }
+        }
+        like4.setOnClickListener {
+            if( liked[R.id.post4like]== false){
+                like4.setImageResource(R.drawable.ic_icon_heart_clicked)
+                liked[R.id.post4like] = true
+            }
+            else{
+                like4.setImageResource(R.drawable.ic_icon_heart)
+                liked[R.id.post4like] = false
+            }
         }
     }
 

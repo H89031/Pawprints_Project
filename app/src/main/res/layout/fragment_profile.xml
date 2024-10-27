@@ -574,6 +574,7 @@
             </LinearLayout>
 
             <Button
+                android:id="@+id/logout"
                 android:text="LOG OUT"
                 android:contentDescription="logout duh"
                 android:fontFamily="sans-serif-black"
