@@ -222,6 +222,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/prof2follow"
                     android:gravity="center"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
@@ -329,6 +330,7 @@
                                     </TextView>
 
                                     <TextView
+                                        android:id="@+id/prof2FollowText1"
                                         android:text="follow"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
@@ -480,6 +482,7 @@
                                     </TextView>
 
                                     <TextView
+                                        android:id="@+id/prof2FollowText2"
                                         android:text="follow"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"

@@ -22,8 +22,37 @@ class Navigation : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_navigation) as NavHostFragment
         val navController = navHostFragment.navController
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top level destinations.
+
         navView.setupWithNavController(navController)
+        navView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    navController.popBackStack(R.id.navigation_home, false) // Keep HomeFragment in the back stack
+                    navController.navigate(R.id.navigation_home)
+                    true
+                }
+                R.id.navigation_profile -> {
+                    navController.popBackStack(R.id.navigation_profile, false) // Keep DashboardFragment in the back stack
+                    navController.navigate(R.id.navigation_profile)
+                    true
+                }
+                R.id.navigation_report -> {
+                    navController.popBackStack(R.id.navigation_report, false) // Keep NotificationsFragment in the back stack
+                    navController.navigate(R.id.navigation_report)
+                    true
+                }
+                R.id.navigation_map -> {
+                    navController.popBackStack(R.id.navigation_map, false) // Keep NotificationsFragment in the back stack
+                    navController.navigate(R.id.navigation_map)
+                    true
+                }
+                R.id.navigation_search -> {
+                    navController.popBackStack(R.id.navigation_search, false) // Keep NotificationsFragment in the back stack
+                    navController.navigate(R.id.navigation_search)
+                    true
+                }
+                else -> false
+            }
+        }
     }
 }
