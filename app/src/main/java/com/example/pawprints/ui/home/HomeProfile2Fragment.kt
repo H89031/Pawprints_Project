@@ -1,5 +1,6 @@
 package com.example.pawprints.ui.home
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,8 +8,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.TextView
+import androidx.core.content.ContextCompat
 import com.example.pawprints.Chat
 import com.example.pawprints.R
+import java.sql.Types.NULL
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,6 +29,8 @@ class HomeProfile2Fragment : Fragment() {
     private var param1: String? = null
     private var param2: String? = null
 
+    private val followed = mutableMapOf<Int, Boolean>()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -38,6 +44,42 @@ class HomeProfile2Fragment : Fragment() {
         val chatting: ImageButton = view.findViewById(R.id.chat)
         chatting.setOnClickListener {
             startActivity(intent)
+        }
+        val follow = listOf(
+            view.findViewById<TextView>(R.id.prof2follow),
+            view.findViewById<TextView>(R.id.prof2FollowText1),
+            view.findViewById<TextView>(R.id.prof2FollowText2)
+        )
+        val followbtn = view.findViewById<TextView>(R.id.prof2follow)
+        val followtxt1 = view.findViewById<TextView>(R.id.prof2FollowText1)
+        val followtxt2 = view.findViewById<TextView>(R.id.prof2FollowText2)
+        follow.forEach { textView ->
+            followed[textView.id] = false
+        }
+        //prof2FollowText
+        //android:id="@id/prof2Follow"
+        follow.forEach { textView ->
+            textView.setOnClickListener {
+                val isFollowed = followed[textView.id] ?: false
+
+                if (!isFollowed) {
+                    followbtn.setBackgroundResource(R.drawable.f_rounded_grey)
+                    followbtn.setText("followed")
+                    followed[textView.id] = true
+                    followtxt1.setText("followed")
+                    followtxt1.setTextColor(ContextCompat.getColor(requireContext(), R.color.purple))
+                    followtxt2.setText("followed")
+                    followtxt2.setTextColor(ContextCompat.getColor(requireContext(), R.color.purple))
+                } else {
+                    followbtn.setBackgroundResource(R.drawable.f_rounded_purple)
+                    followbtn.setText("follow")
+                    followed[textView.id] = false
+                    followtxt1.setText("follow")
+                    followtxt1.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
+                    followtxt2.setText("follow")
+                    followtxt2.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
+                }
+            }
         }
     }
     override fun onCreateView(

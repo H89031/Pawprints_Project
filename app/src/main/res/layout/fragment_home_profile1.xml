@@ -222,6 +222,7 @@
                 </TextView>
 
                 <TextView
+                    android:id="@+id/prof1follow"
                     android:gravity="center"
                     android:layout_width="100dp"
                     android:layout_height="30dp"
@@ -329,6 +330,7 @@
                                     </TextView>
 
                                     <TextView
+                                        android:id="@+id/prof1FollowText1"
                                         android:text="follow"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
@@ -336,7 +338,7 @@
                                         android:clickable="true"
                                         android:focusable="true"
                                         android:textSize="13sp"
-                                        android:textColor="@color/text_black">
+                                        android:textColor="@color/black">
 
                                     </TextView>
 
@@ -480,6 +482,7 @@
                                     </TextView>
 
                                     <TextView
+                                        android:id="@+id/prof1FollowText2"
                                         android:text="follow"
                                         android:layout_width="wrap_content"
                                         android:layout_height="match_parent"
