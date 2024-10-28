@@ -53,6 +53,8 @@ class HomeProfile2Fragment : Fragment() {
         val followbtn = view.findViewById<TextView>(R.id.prof2follow)
         val followtxt1 = view.findViewById<TextView>(R.id.prof2FollowText1)
         val followtxt2 = view.findViewById<TextView>(R.id.prof2FollowText2)
+        val count = view.findViewById<TextView>(R.id.prof2count)
+
         follow.forEach { textView ->
             followed[textView.id] = false
         }
@@ -70,6 +72,8 @@ class HomeProfile2Fragment : Fragment() {
                     followtxt1.setTextColor(ContextCompat.getColor(requireContext(), R.color.purple))
                     followtxt2.setText("followed")
                     followtxt2.setTextColor(ContextCompat.getColor(requireContext(), R.color.purple))
+                    count.setText("64")
+
                 } else {
                     followbtn.setBackgroundResource(R.drawable.f_rounded_purple)
                     followbtn.setText("follow")
@@ -78,6 +82,8 @@ class HomeProfile2Fragment : Fragment() {
                     followtxt1.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
                     followtxt2.setText("follow")
                     followtxt2.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
+                    count.setText("63")
+
                 }
             }
         }
