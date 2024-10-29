@@ -180,23 +180,28 @@ class GMaps : Fragment() {
                     // Initialize views for the second layout
                     val titleTextView = view.findViewById<TextView>(R.id.info_window_title)
                     val imageView = view.findViewById<ImageView>(R.id.info_window_image)
-                    val topright = view.findViewById<TextView>(R.id.info_window_topright)
-                    val topleft = view.findViewById<TextView>(R.id.info_window_topleft)
-                    val bottomleft = view.findViewById<TextView>(R.id.info_window_bottomleft)
-                    val bottomright = view.findViewById<TextView>(R.id.info_window_bottomright)
+                    //val topright = view.findViewById<TextView>(R.id.info_window_topright)
+                    //val topleft = view.findViewById<TextView>(R.id.info_window_topleft)
+                    //val bottomleft = view.findViewById<TextView>(R.id.info_window_bottomleft)
+                    //val bottomright = view.findViewById<TextView>(R.id.info_window_bottomright)
                     val tagContainer = view.findViewById<LinearLayout>(R.id.tagContainer)
+                    val labelcontainer = view.findViewById<LinearLayout>(R.id.LabelContainer1)
+                    val labelcontainer2 = view.findViewById<LinearLayout>(R.id.LabelContainer2)
 
                     // Set values for the second marker
                     titleTextView.text = marker.title
                     imageView.setImageResource(R.drawable.miss_princess)
-                    topright.text = "Regalado Avenue, Fairview, Q.C"
-                    topleft.text = "Name : Princess"
-                    bottomleft.text = "Age : 2 years old"
-                    bottomright.text = "Breed : Shih Tzu"
+                    //topright.text = "Regalado Avenue, Fairview, Q.C"
+                    //topleft.text = "Name : Princess"
+                    //bottomleft.text =  "Sex : Female"
+                    //bottomright.text = "Breed : Shih Tzu"
 
                     // Add multiple tags for this marker
                     addTag(tagContainer, "Last seen at Fairview, Quezon City on October 24, 2024", IconType.NONE)
-
+                    addLabel(labelcontainer, "Name : Princess")
+                    addLabel(labelcontainer, "Age : 2 years old")
+                    addLabel(labelcontainer2, "Sex : Female")
+                    addLabel(labelcontainer2, "Breed : Shih Tzu")
                     view // Return the inflated view
                 }
                 "Stray Dog" -> {
@@ -205,18 +210,20 @@ class GMaps : Fragment() {
                     // Initialize views for the second layout
                     val titleTextView = view.findViewById<TextView>(R.id.info_window_title)
                     val imageView = view.findViewById<ImageView>(R.id.info_window_image)
-                    val topright = view.findViewById<TextView>(R.id.info_window_topright)
-                    val topleft = view.findViewById<TextView>(R.id.info_window_topleft)
-                    val bottomleft = view.findViewById<TextView>(R.id.info_window_bottomleft)
-                    val bottomright = view.findViewById<TextView>(R.id.info_window_bottomright)
+                    //val topright = view.findViewById<TextView>(R.id.info_window_topright)
+                    //val topleft = view.findViewById<TextView>(R.id.info_window_topleft)
+                    //val bottomleft = view.findViewById<TextView>(R.id.info_window_bottomleft)
+                    //val bottomright = view.findViewById<TextView>(R.id.info_window_bottomright)
                     val tagContainer = view.findViewById<LinearLayout>(R.id.tagContainer)
+                    val labelcontainer = view.findViewById<LinearLayout>(R.id.LabelContainer1)
+                    val labelcontainer2 = view.findViewById<LinearLayout>(R.id.LabelContainer2)
 
                     // Set values for the second marker
                     titleTextView.text = marker.title
                     imageView.setImageResource(R.drawable.bogart)
-                    topright.text = "Sex : Male"
-                    topleft.text = "Given Name : Bogart"
-                    bottomleft.text = "Brown Aspin with thick, hairy fur."
+                    //topright.text = "Sex : Male"
+                    //topleft.text = "Given Name : Bogart"
+                    //bottomleft.text = "Brown Aspin with thick, hairy fur."
 
                     // Add multiple tags for this marker
                     addTag(
@@ -224,6 +231,9 @@ class GMaps : Fragment() {
                         "Last seen at Fairview, Quezon City on October 24, 2024",
                         IconType.NONE
                     )
+                    addLabel(labelcontainer, "Sex : Male")
+                    addLabel(labelcontainer, "Given Name : Bogart")
+                    addLabel(labelcontainer2, "Brown Aspin with thick, hairy fur.")
 
                     view // Return the inflated view
                 }
@@ -254,7 +264,52 @@ class GMaps : Fragment() {
         override fun getInfoWindow(marker: Marker): View? {
             return null // Use default window
         }
+        var leftOrRight = 0
 
+        private fun addLabel(layout: LinearLayout, label: String) {
+            // Reset leftOrRight after two calls
+                leftOrRight = 0
+
+            // Create a new LinearLayout for the label
+            val tagLayout = LinearLayout(requireContext()).apply {
+                layoutParams = LinearLayout.LayoutParams(
+                    0, // Width set to 0 to allow weight to distribute space
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply {
+                    marginEnd = 4 // Space between tags
+                    weight = 1f // Set weight to 1 for equal space distribution
+                }
+                orientation = LinearLayout.HORIZONTAL
+                gravity = if (leftOrRight == 0) {
+                    Gravity.START // Align left
+                } else {
+                    Gravity.END   // Align right
+                }
+                leftOrRight += 1 // Toggle alignment
+                setPadding(5, 5, 5, 5)
+                setBackgroundColor(ResourcesCompat.getColor(resources, R.color.white, null))
+            }
+
+            // Create the TextView for the label
+            val tagTextView = TextView(requireContext()).apply {
+                layoutParams = LinearLayout.LayoutParams(
+                    LinearLayout.LayoutParams.WRAP_CONTENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT
+                ).apply {
+                    marginEnd = 8 // Space between text and icon
+                }
+                text = label
+                setTextColor(Color.parseColor("#555555"))
+                textSize = 14f
+                setPadding(4, 2, 4, 2)
+            }
+
+            // Add the TextView to the tag layout
+            tagLayout.addView(tagTextView)
+
+            // Add the tag layout to the main container
+            layout.addView(tagLayout)
+        }
 
         private fun addTag(container: LinearLayout, tagName: String, iconType: IconType) {
             // Create a new LinearLayout for the tag
