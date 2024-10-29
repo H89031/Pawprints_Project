@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/navigation_map"
+        android:id="@+id/GMaps"
         android:icon="@drawable/ic_nav_map"
         android:title=""
 

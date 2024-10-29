@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.map.GMaps">
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/map_fragment"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/f_top"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/pawprints"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:fontFamily="@font/londrina_solid_black"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="PAWPRINTS"
+            android:textColor="@color/text_black"
+            android:textSize="30sp" />
+
+        <ImageButton
+            android:id="@+id/chat"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="200dp"
+            android:background="@drawable/transparent_background"
+            android:contentDescription="chat"
+            android:src="@drawable/ic_icon_chat"
+            tools:layout_editor_absoluteX="173dp"
+            tools:layout_editor_absoluteY="230dp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>
