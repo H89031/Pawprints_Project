@@ -1,6 +1,8 @@
 package com.example.pawprints.ui.map
 
 import android.content.Intent
+import android.graphics.Bitmap
+import android.graphics.Canvas
 import android.graphics.Color
 import android.os.Bundle
 import android.view.Gravity
@@ -19,6 +21,8 @@ import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.BitmapDescriptor
+import com.google.android.gms.maps.model.BitmapDescriptorFactory
 import com.google.android.gms.maps.model.LatLng
 import com.google.android.gms.maps.model.Marker
 import com.google.android.gms.maps.model.MarkerOptions
@@ -27,55 +31,66 @@ import java.sql.Types.NULL
 class GMaps : Fragment() {
 
     private val callback = OnMapReadyCallback { googleMap ->
-
         // Add markers with titles to differentiate them
         googleMap.addMarker(
             MarkerOptions().position(LatLng(14.752254549381146, 121.04564738516163))
-                .title("Pawssion Project Adoption Center")
+                .title("Pawssion Project Adoption Center").icon(BitmapDescriptorFactory.fromBitmap(getBitmapFromDrawable(R.drawable.ic_pin_center)!!))
         )
 
         googleMap.addMarker(
             MarkerOptions().position(LatLng(14.73296559156871, 121.06497226915262))
-                .title("Regalado Veterinary Clinic")
+                .title("Regalado Veterinary Clinic").icon(BitmapDescriptorFactory.fromBitmap(getBitmapFromDrawable(R.drawable.ic_pin_clinic)!!))
         )
         googleMap.addMarker(
             MarkerOptions().position(LatLng(14.740007507573043, 121.05083130945665))
-                .title("Missing Dog")
+                .title("Missing Dog").icon(BitmapDescriptorFactory.fromBitmap(getBitmapFromDrawable(R.drawable.ic_pin_missing)!!))
         )
 
         googleMap.addMarker(
             MarkerOptions().position(LatLng(14.726398898442062, 121.05905437287026))
-                .title("Stray Dog")
+                .title("Stray Dog").icon(BitmapDescriptorFactory.fromBitmap(getBitmapFromDrawable(R.drawable.ic_pin_stray)!!))
         )
         googleMap.addMarker(
             MarkerOptions().position(LatLng(14.723104954883974, 121.0430402734264))
-                .title("Pawssion Project Adoption Center")
+                .title("Pawssion Project Adoption Center").icon(BitmapDescriptorFactory.fromBitmap(getBitmapFromDrawable(R.drawable.ic_pin_center)!!))
         )
 
         googleMap.addMarker(
             MarkerOptions().position(LatLng(14.73016829005084, 121.04900097268691))
-                .title("Regalado Veterinary Clinic")
+                .title("Regalado Veterinary Clinic").icon(BitmapDescriptorFactory.fromBitmap(getBitmapFromDrawable(R.drawable.ic_pin_clinic)!!))
         )
         googleMap.addMarker(
             MarkerOptions().position(LatLng(14.724187494606497, 121.06346788226035))
-                .title("Missing Dog")
+                .title("Missing Dog").icon(BitmapDescriptorFactory.fromBitmap(getBitmapFromDrawable(R.drawable.ic_pin_missing)!!))
         )
 
         googleMap.addMarker(
             MarkerOptions().position(LatLng(14.739078393300986, 121.06753943951306))
-                .title("Stray Dog")
+                .title("Stray Dog").icon(BitmapDescriptorFactory.fromBitmap(getBitmapFromDrawable(R.drawable.ic_pin_stray)!!))
         )
 
         googleMap.moveCamera(
             CameraUpdateFactory.newLatLngZoom(
                 LatLng(
                     14.733112574046231, 121.0604805835635
-                ), 15f
+                ), 13f
             )
         )
 
         // Set custom InfoWindowAdapter
         googleMap.setInfoWindowAdapter(CustomInfoWindowAdapter())
+    }
+
+    private fun getBitmapFromDrawable(resId: Int): Bitmap? {
+        var bitmap: Bitmap? = null
+        val drawable = ResourcesCompat.getDrawable(resources, resId, null)
+        if (drawable != null) {
+            bitmap = Bitmap.createBitmap(125, 125, Bitmap.Config.ARGB_8888)
+            val canvas = Canvas(bitmap)
+            drawable.setBounds(0, 0, canvas.width, canvas.height)
+            drawable.draw(canvas)
+        }
+        return bitmap
     }
 
     override fun onCreateView(
@@ -270,7 +285,7 @@ class GMaps : Fragment() {
                 }
                 text = tagName
                 setTextColor(Color.WHITE)
-                textSize = 14f
+                textSize = 11f
                 setPadding(4, 2, 4, 2)
 
             }
