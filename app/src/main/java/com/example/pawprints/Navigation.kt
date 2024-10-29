@@ -41,9 +41,9 @@ class Navigation : AppCompatActivity() {
                     navController.navigate(R.id.navigation_report)
                     true
                 }
-                R.id.navigation_map -> {
-                    navController.popBackStack(R.id.navigation_map, false) // Keep NotificationsFragment in the back stack
-                    navController.navigate(R.id.navigation_map)
+                R.id.GMaps -> {
+                    navController.popBackStack(R.id.GMaps, false) // Keep NotificationsFragment in the back stack
+                    navController.navigate(R.id.GMaps)
                     true
                 }
                 R.id.navigation_search -> {

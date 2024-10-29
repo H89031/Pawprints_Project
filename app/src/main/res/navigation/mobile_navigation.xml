@@ -4,13 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
     app:startDestination="@+id/navigation_home">
-
     <fragment
-        android:id="@+id/navigation_map"
-        android:name="com.example.pawprints.ui.map.MapFragment"
-        android:label="@string/title_map"
-        tools:layout="@layout/fragment_map" />
-
+        android:id="@+id/GMaps"
+        android:name="com.example.pawprints.ui.map.GMaps"
+        android:label="fragment_g_maps"
+        tools:layout="@layout/fragment_g_maps" />
     <fragment
         android:id="@+id/navigation_search"
         android:name="com.example.pawprints.ui.search.SearchFragment"
@@ -265,4 +263,5 @@
         android:name="com.example.pawprints.ui.search.SearchCenter2Fragment"
         android:label="fragment_search_center2"
         tools:layout="@layout/fragment_search_center2" />
+
 </navigation>
