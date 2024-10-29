@@ -392,6 +392,7 @@
                             </TextView>
 
                             <ImageButton
+                                android:id="@+id/prof2heart1"
                                 android:contentDescription="heart"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
@@ -545,6 +546,7 @@
                             </TextView>
 
                             <ImageButton
+                                android:id="@+id/prof2heart2"
                                 android:contentDescription="heart"
                                 android:layout_width="45dp"
                                 android:layout_height="45dp"
