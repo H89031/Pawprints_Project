@@ -30,7 +30,7 @@ class HomeFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
-    private val liked = mutableMapOf<Int, Boolean>()
+    val liked = mutableMapOf<Int, Boolean>()
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val posts: ImageButton = view.findViewById(R.id.addpost)
@@ -63,14 +63,10 @@ class HomeFragment : Fragment() {
         val like3: ImageButton = view.findViewById(R.id.post3like)
         val like4: ImageButton = view.findViewById(R.id.post4like)
 
-        liked[R.id.post1like] = false
-        liked[R.id.post2like] = false
-        liked[R.id.post3like] = false
-        liked[R.id.post4like] = false
 
 
         like1.setOnClickListener {
-            if( liked[R.id.post1like]== false){
+            if( liked[R.id.post1like]!= true){
                 like1.setImageResource(R.drawable.ic_icon_heart_clicked)
                 liked[R.id.post1like] = true
         }
@@ -80,7 +76,7 @@ class HomeFragment : Fragment() {
             }
         }
         like2.setOnClickListener {
-            if( liked[R.id.post2like]== false){
+            if( liked[R.id.post2like]!= true){
                 like2.setImageResource(R.drawable.ic_icon_heart_clicked)
                 liked[R.id.post2like] = true
             }
@@ -90,7 +86,7 @@ class HomeFragment : Fragment() {
             }
         }
         like3.setOnClickListener {
-            if( liked[R.id.post3like]== false){
+            if( liked[R.id.post3like]!=true){
                 like3.setImageResource(R.drawable.ic_icon_heart_clicked)
                 liked[R.id.post3like] = true
             }
@@ -100,7 +96,7 @@ class HomeFragment : Fragment() {
             }
         }
         like4.setOnClickListener {
-            if( liked[R.id.post4like]== false){
+            if( liked[R.id.post4like]!=true){
                 like4.setImageResource(R.drawable.ic_icon_heart_clicked)
                 liked[R.id.post4like] = true
             }
@@ -109,6 +105,7 @@ class HomeFragment : Fragment() {
                 liked[R.id.post4like] = false
             }
         }
+
     }
 
     override fun onCreateView(
@@ -133,7 +130,4 @@ class HomeFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
-
-
-
 }
