@@ -28,8 +28,8 @@ class HomeProfile2Fragment : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
-
     private val followed = mutableMapOf<Int, Boolean>()
+    private val liked = mutableMapOf<Int, Boolean>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -84,6 +84,31 @@ class HomeProfile2Fragment : Fragment() {
                     followtxt2.setTextColor(ContextCompat.getColor(requireContext(), R.color.black))
                     count.setText("63")
 
+                }
+            }
+            val like1: ImageButton = view.findViewById(R.id.prof2heart1)
+            val like2: ImageButton = view.findViewById(R.id.prof2heart2)
+
+            liked[R.id.prof2heart1] = false
+            liked[R.id.prof2heart2] = false
+            like1.setOnClickListener {
+                if( liked[R.id.prof2heart1]== false){
+                    like1.setImageResource(R.drawable.ic_icon_heart_clicked)
+                    liked[R.id.prof2heart1] = true
+                }
+                else{
+                    like1.setImageResource(R.drawable.ic_icon_heart)
+                    liked[R.id.prof2heart1] = false
+                }
+            }
+            like2.setOnClickListener {
+                if( liked[R.id.prof2heart2]== false){
+                    like2.setImageResource(R.drawable.ic_icon_heart_clicked)
+                    liked[R.id.prof2heart2] = true
+                }
+                else{
+                    like2.setImageResource(R.drawable.ic_icon_heart)
+                    liked[R.id.prof2heart2] = false
                 }
             }
         }
