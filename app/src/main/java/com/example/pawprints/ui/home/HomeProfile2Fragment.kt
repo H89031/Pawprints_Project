@@ -89,10 +89,8 @@ class HomeProfile2Fragment : Fragment() {
             val like1: ImageButton = view.findViewById(R.id.prof2heart1)
             val like2: ImageButton = view.findViewById(R.id.prof2heart2)
 
-            liked[R.id.prof2heart1] = false
-            liked[R.id.prof2heart2] = false
             like1.setOnClickListener {
-                if( liked[R.id.prof2heart1]== false){
+                if( liked[R.id.prof2heart1]!= true){
                     like1.setImageResource(R.drawable.ic_icon_heart_clicked)
                     liked[R.id.prof2heart1] = true
                 }
@@ -102,7 +100,7 @@ class HomeProfile2Fragment : Fragment() {
                 }
             }
             like2.setOnClickListener {
-                if( liked[R.id.prof2heart2]== false){
+                if( liked[R.id.prof2heart2]!= true){
                     like2.setImageResource(R.drawable.ic_icon_heart_clicked)
                     liked[R.id.prof2heart2] = true
                 }
@@ -113,6 +111,7 @@ class HomeProfile2Fragment : Fragment() {
             }
         }
     }
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -120,6 +119,7 @@ class HomeProfile2Fragment : Fragment() {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_home_profile2, container, false)
     }
+
 
     companion object {
         /**

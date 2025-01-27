@@ -83,10 +83,9 @@ class HomeProfile1Fragment : Fragment() {
             val like1: ImageButton = view.findViewById(R.id.prof1heart1)
             val like2: ImageButton = view.findViewById(R.id.prof1heart2)
 
-            liked[R.id.prof1heart1] = false
-            liked[R.id.prof1heart2] = false
+
             like1.setOnClickListener {
-                if( liked[R.id.prof1heart1]== false){
+                if( liked[R.id.prof1heart1]!= true){
                     like1.setImageResource(R.drawable.ic_icon_heart_clicked)
                     liked[R.id.prof1heart1] = true
                 }
@@ -96,7 +95,7 @@ class HomeProfile1Fragment : Fragment() {
                 }
             }
             like2.setOnClickListener {
-                if( liked[R.id.prof1heart2]== false){
+                if( liked[R.id.prof1heart2]!= true){
                     like2.setImageResource(R.drawable.ic_icon_heart_clicked)
                     liked[R.id.prof1heart2] = true
                 }

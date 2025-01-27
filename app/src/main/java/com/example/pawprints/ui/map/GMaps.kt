@@ -31,7 +31,6 @@ import java.sql.Types.NULL
 class GMaps : Fragment() {
 
     private val callback = OnMapReadyCallback { googleMap ->
-        // Add markers with titles to differentiate them
         googleMap.addMarker(
             MarkerOptions().position(LatLng(14.752254549381146, 121.04564738516163))
                 .title("Pawssion Project Adoption Center").icon(BitmapDescriptorFactory.fromBitmap(getBitmapFromDrawable(R.drawable.ic_pin_center)!!))
@@ -77,7 +76,6 @@ class GMaps : Fragment() {
             )
         )
 
-        // Set custom InfoWindowAdapter
         googleMap.setInfoWindowAdapter(CustomInfoWindowAdapter())
     }
 
@@ -123,12 +121,10 @@ class GMaps : Fragment() {
     inner class CustomInfoWindowAdapter : GoogleMap.InfoWindowAdapter {
 
         override fun getInfoContents(marker: Marker): View? {
-            // Determine which layout to use based on the marker title
             val infoWindowView = when (marker.title) {
                 "Pawssion Project Adoption Center" -> {
                     val view = layoutInflater.inflate(R.layout.marker1_panel, null)
 
-                    // Initialize views for the first layout
                     val titleTextView = view.findViewById<TextView>(R.id.info_window_title)
                     val imageView = view.findViewById<ImageView>(R.id.info_window_image)
                     val locationTextView = view.findViewById<TextView>(R.id.info_window_location)
@@ -136,23 +132,20 @@ class GMaps : Fragment() {
                     val emailTextView = view.findViewById<TextView>(R.id.info_window_email)
                     val tagContainer = view.findViewById<LinearLayout>(R.id.tagContainer)
 
-                    // Set values for the first marker
                     titleTextView.text = marker.title
                     imageView.setImageResource(R.drawable.ad_pawssion_project)
                     locationTextView.text = "Camarin, Caloocan City"
                     phoneTextView.text = "0917 123 4567"
                     emailTextView.text = "pawssionproject123@gmail.com"
 
-                    // Add tag for this marker
                     addTag(tagContainer, "Rating: 4.8", IconType.STAR)
 
-                    view // Return the inflated view
+                    view
                 }
 
                 "Regalado Veterinary Clinic" -> {
                     val view = layoutInflater.inflate(R.layout.marker1_panel, null)
 
-                    // Initialize views for the second layout
                     val titleTextView = view.findViewById<TextView>(R.id.info_window_title)
                     val imageView = view.findViewById<ImageView>(R.id.info_window_image)
                     val locationTextView = view.findViewById<TextView>(R.id.info_window_location)
@@ -160,24 +153,21 @@ class GMaps : Fragment() {
                     val emailTextView = view.findViewById<TextView>(R.id.info_window_email)
                     val tagContainer = view.findViewById<LinearLayout>(R.id.tagContainer)
 
-                    // Set values for the second marker
                     titleTextView.text = marker.title
                     imageView.setImageResource(R.drawable.ac_regalado)
                     locationTextView.text = "Regalado Avenue, Fairview, Q.C"
                     phoneTextView.text = "8823 9876"
                     emailTextView.text = "regaladovet@gmail.com"
 
-                    // Add multiple tags for this marker
                     addTag(tagContainer, "Check-Up", IconType.CHECK)
                     addTag(tagContainer, "Grooming", IconType.CHECK)
                     addTag(tagContainer, "Castration & Spaying", IconType.CHECK)
 
-                    view // Return the inflated view
+                    view
                 }
                 "Missing Dog" -> {
                     val view = layoutInflater.inflate(R.layout.marker2_panel, null)
 
-                    // Initialize views for the second layout
                     val titleTextView = view.findViewById<TextView>(R.id.info_window_title)
                     val imageView = view.findViewById<ImageView>(R.id.info_window_image)
                     //val topright = view.findViewById<TextView>(R.id.info_window_topright)
@@ -188,7 +178,6 @@ class GMaps : Fragment() {
                     val labelcontainer = view.findViewById<LinearLayout>(R.id.LabelContainer1)
                     val labelcontainer2 = view.findViewById<LinearLayout>(R.id.LabelContainer2)
 
-                    // Set values for the second marker
                     titleTextView.text = marker.title
                     imageView.setImageResource(R.drawable.miss_princess)
                     //topright.text = "Regalado Avenue, Fairview, Q.C"
@@ -196,18 +185,16 @@ class GMaps : Fragment() {
                     //bottomleft.text =  "Sex : Female"
                     //bottomright.text = "Breed : Shih Tzu"
 
-                    // Add multiple tags for this marker
                     addTag(tagContainer, "Last seen at Fairview, Quezon City on October 24, 2024", IconType.NONE)
                     addLabel(labelcontainer, "Name : Princess")
                     addLabel(labelcontainer, "Age : 2 years old")
                     addLabel(labelcontainer2, "Sex : Female")
                     addLabel(labelcontainer2, "Breed : Shih Tzu")
-                    view // Return the inflated view
+                    view
                 }
                 "Stray Dog" -> {
                     val view = layoutInflater.inflate(R.layout.marker2_panel, null)
 
-                    // Initialize views for the second layout
                     val titleTextView = view.findViewById<TextView>(R.id.info_window_title)
                     val imageView = view.findViewById<ImageView>(R.id.info_window_image)
                     //val topright = view.findViewById<TextView>(R.id.info_window_topright)
@@ -218,14 +205,12 @@ class GMaps : Fragment() {
                     val labelcontainer = view.findViewById<LinearLayout>(R.id.LabelContainer1)
                     val labelcontainer2 = view.findViewById<LinearLayout>(R.id.LabelContainer2)
 
-                    // Set values for the second marker
                     titleTextView.text = marker.title
                     imageView.setImageResource(R.drawable.bogart)
                     //topright.text = "Sex : Male"
                     //topleft.text = "Given Name : Bogart"
                     //bottomleft.text = "Brown Aspin with thick, hairy fur."
 
-                    // Add multiple tags for this marker
                     addTag(
                         tagContainer,
                         "Last seen at Fairview, Quezon City on October 24, 2024",
@@ -235,13 +220,12 @@ class GMaps : Fragment() {
                     addLabel(labelcontainer, "Given Name : Bogart")
                     addLabel(labelcontainer2, "Brown Aspin with thick, hairy fur.")
 
-                    view // Return the inflated view
+                    view
                 }
 
                 else -> {
                     val view = layoutInflater.inflate(R.layout.marker1_panel, null)
 
-                    // Fallback for unknown location
                     val titleTextView = view.findViewById<TextView>(R.id.info_window_title)
                     val imageView = view.findViewById<ImageView>(R.id.info_window_image)
                     val locationTextView = view.findViewById<TextView>(R.id.info_window_location)
@@ -254,49 +238,46 @@ class GMaps : Fragment() {
                     phoneTextView.text = "NONE"
                     emailTextView.text = "NONE"
 
-                    view // Return the inflated view
+                    view
                 }
             }
 
-            return infoWindowView // Return the selected info window view
+            return infoWindowView
         }
 
         override fun getInfoWindow(marker: Marker): View? {
-            return null // Use default window
+            return null
         }
         var leftOrRight = 0
 
         private fun addLabel(layout: LinearLayout, label: String) {
-            // Reset leftOrRight after two calls
                 leftOrRight = 0
 
-            // Create a new LinearLayout for the label
             val tagLayout = LinearLayout(requireContext()).apply {
                 layoutParams = LinearLayout.LayoutParams(
-                    0, // Width set to 0 to allow weight to distribute space
+                    0,
                     LinearLayout.LayoutParams.WRAP_CONTENT
                 ).apply {
-                    marginEnd = 4 // Space between tags
-                    weight = 1f // Set weight to 1 for equal space distribution
+                    marginEnd = 4
+                    weight = 1f
                 }
                 orientation = LinearLayout.HORIZONTAL
                 gravity = if (leftOrRight == 0) {
-                    Gravity.START // Align left
+                    Gravity.START
                 } else {
-                    Gravity.END   // Align right
+                    Gravity.END
                 }
-                leftOrRight += 1 // Toggle alignment
+                leftOrRight += 1
                 setPadding(5, 5, 5, 5)
                 setBackgroundColor(ResourcesCompat.getColor(resources, R.color.white, null))
             }
 
-            // Create the TextView for the label
             val tagTextView = TextView(requireContext()).apply {
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
                 ).apply {
-                    marginEnd = 8 // Space between text and icon
+                    marginEnd = 8
                 }
                 text = label
                 setTextColor(Color.parseColor("#555555"))
@@ -304,24 +285,21 @@ class GMaps : Fragment() {
                 setPadding(4, 2, 4, 2)
             }
 
-            // Add the TextView to the tag layout
             tagLayout.addView(tagTextView)
 
-            // Add the tag layout to the main container
             layout.addView(tagLayout)
         }
 
         private fun addTag(container: LinearLayout, tagName: String, iconType: IconType) {
-            // Create a new LinearLayout for the tag
             val tagLayout = LinearLayout(requireContext()).apply {
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
                 ).apply {
-                    marginEnd = 8 // Space between tags
+                    marginEnd = 8
                 }
                 orientation = LinearLayout.HORIZONTAL
-                gravity = Gravity.CENTER_VERTICAL // Align items vertically centered
+                gravity = Gravity.CENTER_VERTICAL
                 setPadding(5, 5, 5, 5)
                 background = ResourcesCompat.getDrawable(
                     resources,
@@ -330,13 +308,13 @@ class GMaps : Fragment() {
                 )
             }
 
-            // Create the TextView for the tag name
+
             val tagTextView = TextView(requireContext()).apply {
                 layoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.WRAP_CONTENT,
                     LinearLayout.LayoutParams.WRAP_CONTENT
                 ).apply {
-                    marginEnd = 4 // Space between text and icon
+                    marginEnd = 4
                 }
                 text = tagName
                 setTextColor(Color.WHITE)
@@ -345,18 +323,16 @@ class GMaps : Fragment() {
 
             }
 
-            // Create the ImageView for the icon
             val iconImageView = ImageView(requireContext()).apply {
                 layoutParams = LinearLayout.LayoutParams(
-                    32, // Width of the icon
-                    32  // Height of the icon
+                    32,
+                    32
                 ).apply {
-                    marginStart = 4 // Space between TextView and ImageView
+                    marginStart = 4
                 }
                 adjustViewBounds = true
-                scaleType = ImageView.ScaleType.CENTER_INSIDE // Ensures the image scales properly
+                scaleType = ImageView.ScaleType.CENTER_INSIDE
 
-                // Set the icon based on the iconType
                 when (iconType) {
                     IconType.STAR -> {
                         setImageResource(R.drawable.ic_icon_star_white)
@@ -370,11 +346,9 @@ class GMaps : Fragment() {
                 }
             }
 
-            // Add the TextView and ImageView to the tag layout
             tagLayout.addView(tagTextView)
             tagLayout.addView(iconImageView)
 
-            // Add the tag layout to the container
             container.addView(tagLayout)
         }
     }
