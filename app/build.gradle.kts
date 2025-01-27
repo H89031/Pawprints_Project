@@ -1,9 +1,9 @@
 
 plugins {
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
-
+    id("com.google.devtools.ksp")
     alias(libs.plugins.android.application)
-    alias(libs.plugins.kotlin.android)
+    id("org.jetbrains.kotlin.android") version "1.9.10"
 }
 
 android {
@@ -43,8 +43,11 @@ android {
 
 dependencies {
 
-    implementation(libs.androidx.room.runtime)
-    annotationProcessor (libs.androidx.room.compiler.v261)
+    implementation (libs.androidx.room.runtime)
+    implementation(libs.androidx.room.ktx.v261)
+    ksp (libs.androidx.room.compiler.v261)
+
+
 
     implementation (libs.play.services.maps)
     implementation(libs.androidx.core.ktx)
