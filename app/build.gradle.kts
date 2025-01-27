@@ -1,11 +1,9 @@
-import com.android.build.api.dsl.LintOptions
 
 plugins {
     id("com.google.android.libraries.mapsplatform.secrets-gradle-plugin")
+
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-
-
 }
 
 android {
@@ -45,6 +43,9 @@ android {
 
 dependencies {
 
+    implementation(libs.androidx.room.runtime)
+    annotationProcessor (libs.androidx.room.compiler.v261)
+
     implementation (libs.play.services.maps)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
@@ -60,5 +61,6 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
 
 }
