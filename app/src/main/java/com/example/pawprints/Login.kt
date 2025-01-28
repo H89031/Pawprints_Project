@@ -17,10 +17,7 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
-        val db = Room.databaseBuilder(
-            applicationContext,
-            AppDatabase::class.java, "paw_db"
-        ).allowMainThreadQueries().build()
+
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

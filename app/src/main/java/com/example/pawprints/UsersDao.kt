@@ -10,13 +10,16 @@ import androidx.room.Query
 interface UsersDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insertUser(user: Users)
+    suspend fun insertUser(vararg user: Users)
+
+    @Query("DELETE FROM Users")
+    suspend fun nukeTable()
 
     @Delete
     suspend fun delete(user: Users)
 
     @Query("SELECT * FROM Users WHERE username = :userId OR email = :userId")
-    fun getUserByLoginId(userId: String?): Users?
+    suspend fun getUserByLoginId(userId: String?): Users?
 
     @Query("SELECT * FROM Users")
     suspend fun getAllUsers(): List<Users>
