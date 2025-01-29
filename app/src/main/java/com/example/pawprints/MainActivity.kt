@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-// TEST DB
+////// TEST DB
 //        lifecycleScope.launch {
 //
 //            val db = AppDatabase.getDatabase(applicationContext)

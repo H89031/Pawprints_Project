@@ -149,12 +149,14 @@
         </LinearLayout>
 
         <EditText
+            android:maxLength="11"
             android:id="@+id/phone"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/f_rounded_corner"
             android:hint="Phone Number"
+            android:text="09"
             android:inputType="phone"
             android:padding="10dp"
             android:textColor="@color/black"
