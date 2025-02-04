@@ -9,7 +9,11 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import androidx.lifecycle.lifecycleScope
 import androidx.room.Room
+import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 
 
 class Login : AppCompatActivity() {
@@ -30,13 +34,31 @@ class Login : AppCompatActivity() {
         startActivity(intent)
     }
 
+    @OptIn(DelicateCoroutinesApi::class)
     fun LoggingIn(view: View) {
         val username = findViewById<EditText>(R.id.input_name)
         val password = findViewById<EditText>(R.id.input_password)
         val intent = Intent(this@Login, Navigation::class.java)
 
         if (username.text.isNotEmpty() && password.text.isNotEmpty()){
-            startActivity(intent)
+            GlobalScope.launch{
+                val db = AppDatabase.getDatabase(applicationContext)
+                val userDao = db.usersDao()
+                try {
+                    val Exists: Boolean = userDao.getLogging(username.text.toString(), password.text.toString())
+                    // Handle the result
+                    if (Exists) {
+                        startActivity(intent)
+                    } else {
+                        username.setError("Incorrect Username or Password")
+                        password.setError("Incorrect Username or Password")
+                    }
+                } catch (e: Throwable) {
+                    // Handle any exceptions
+                    println("Error: ${e.message}")
+                }
+            }
+
         }
         else{
             if(username.text.isEmpty()){

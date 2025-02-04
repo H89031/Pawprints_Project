@@ -14,6 +14,8 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.viewmodel.CreationExtras
+import kotlinx.coroutines.DelicateCoroutinesApi
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import java.sql.Date
 import java.text.SimpleDateFormat
@@ -24,6 +26,7 @@ import java.util.Locale
 class Signup() : AppCompatActivity() {
 
 
+    @OptIn(DelicateCoroutinesApi::class)
     @SuppressLint("ResourceType")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -92,14 +95,15 @@ class Signup() : AppCompatActivity() {
         }
         loggingIn.setOnClickListener {
             ///FIX THIS
-            lifecycleScope.launch {
+            GlobalScope.launch {
                 val db = AppDatabase.getDatabase(applicationContext)
                 val userDao = db.usersDao()
-                val birthDate = convertToSqlDate(bday.text.toString())
 
                 if(name.text.isNotEmpty()&&username.text.isNotEmpty()&&email.text.isNotEmpty()&&
                     bday.text.isNotEmpty()&&phonenum.text.isNotEmpty()&&address.text.isNotEmpty()&&
                     password.text.isNotEmpty()){
+
+                    val birthDate = convertToSqlDate(bday.text.toString())
                     val User: Unit = userDao.insertUser(
                         Users(
                             0,
@@ -136,11 +140,10 @@ class Signup() : AppCompatActivity() {
                     if (password.text.isEmpty()){
                         password.error = "Input your Password"
                     }
-                    if (con_password.text.isEmpty()){
+                    if (con_password.text != password.text){
                         con_password.error = "Input your Password Again"
                     }
                 }
-
                 val users: List<Users> = userDao.getAllUsers()
             }
 
