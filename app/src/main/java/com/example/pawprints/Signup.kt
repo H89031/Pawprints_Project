@@ -95,7 +95,7 @@ class Signup() : AppCompatActivity() {
         }
         loggingIn.setOnClickListener {
             ///FIX THIS
-            GlobalScope.launch {
+            lifecycleScope.launch {
                 val db = AppDatabase.getDatabase(applicationContext)
                 val userDao = db.usersDao()
 
@@ -104,20 +104,26 @@ class Signup() : AppCompatActivity() {
                     password.text.isNotEmpty()){
 
                     val birthDate = convertToSqlDate(bday.text.toString())
-                    val User: Unit = userDao.insertUser(
-                        Users(
-                            0,
-                            fullname = name.text.toString(),
-                            username = username.text.toString(),
-                            email = email.text.toString(),
 
-                            bday = birthDate,
-                            phonenum = phonenum.text.toString(),
-                            address = address.text.toString(),
-                            password = password.text.toString()
+                    if ((con_password.text.toString() != password.text.toString())){
+                        con_password.error = "Input your Password Again"
+                    }
+                    else {
+                        val User: Unit = userDao.insertUser(
+                            Users(
+                                0,
+                                fullname = name.text.toString(),
+                                username = username.text.toString(),
+                                email = email.text.toString(),
+
+                                bday = birthDate,
+                                phonenum = phonenum.text.toString(),
+                                address = address.text.toString(),
+                                password = password.text.toString()
+                            )
                         )
-                    )
-                    finish()
+                        finish()
+                    }
                 }else{
                     if (name.text.isEmpty()){
                         name.error = "Input your Fullname"
@@ -140,9 +146,10 @@ class Signup() : AppCompatActivity() {
                     if (password.text.isEmpty()){
                         password.error = "Input your Password"
                     }
-                    if (con_password.text != password.text){
+                    if (con_password.text.isEmpty()){
                         con_password.error = "Input your Password Again"
                     }
+
                 }
                 val users: List<Users> = userDao.getAllUsers()
             }
